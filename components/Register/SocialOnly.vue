@@ -15,7 +15,6 @@
 </template>
 
 <script setup lang="ts">
-import config from '@/config'
 </script>
 
 <style scoped>

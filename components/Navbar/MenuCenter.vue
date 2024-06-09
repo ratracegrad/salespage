@@ -6,7 +6,7 @@
 				<ButtonsAppName class="ml-3"/>
 			</div>
 			<div class="lg:hidden">
-				<ButtonsNavbarOpen @toggleNavbar="toggleNavbar" />
+				<ButtonsNavbarOpen @toggle-navbar="toggleNavbar" />
 			</div>
 			<ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
 				<ButtonsNavbarMenu />
@@ -18,15 +18,15 @@
 			</div>
 		</div>
 	</nav>
-	<div v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="relative z-50 ">
-		<div class="navbar-backdrop inset-0 bg-gray-800 opacity-25"></div>
+	<div :class="{'hidden': !showMenu, 'flex': showMenu}" class="relative z-50 ">
+		<div class="navbar-backdrop inset-0 bg-gray-800 opacity-25"/>
 		<nav class="top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 border-r overflow-y-auto bg-navbarLightBackground dark:bg-navbarDarkBackground text-navbarLightText dark:text-navbarDarkText">
 			<div class="flex items-center justify-between mb-8">
 				<div class="flex items-center">
 					<ButtonsAppLogo />
 					<ButtonsAppName class="ml-3"/>
 				</div>
-				<ButtonsNavbarClose @toggleNavbar="toggleNavbar" />
+				<ButtonsNavbarClose @toggle-navbar="toggleNavbar" />
 			</div>
 			<div>
 				<ul>

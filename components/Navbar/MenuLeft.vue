@@ -15,8 +15,8 @@
 						<ButtonsLogin />
 					</div>
           <button class="cursor-pointer text-2xl lg:hidden focus:outline-none">
-            <ButtonsNavbarOpen v-if="!showMenu" @toggleNavbar="toggleNavbar" />
-            <ButtonsNavbarClose v-else @toggleNavbar="toggleNavbar" />
+            <ButtonsNavbarOpen v-if="!showMenu" @toggle-navbar="toggleNavbar" />
+            <ButtonsNavbarClose v-else @toggle-navbar="toggleNavbar" />
           </button>
 				</div>
 				<ul :class="{ 'transform md:transform-none scale-y-0': !showMenu, 'h-full': showMenu }" class="h-0 flex flex-col flex-grow pb-4 md:hidden origin-top duration-300">

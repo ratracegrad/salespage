@@ -7,8 +7,8 @@
 						<ButtonsAppName />
 					</div>
           <div class="cursor-pointer text-2xl md:hidden focus:outline-none">
-            <ButtonsNavbarOpen v-if="!showMenu" @toggleNavbar="toggleNavbar" />
-            <ButtonsNavbarClose v-else @toggleNavbar="toggleNavbar" />
+            <ButtonsNavbarOpen v-if="!showMenu" @toggle-navbar="toggleNavbar" />
+            <ButtonsNavbarClose v-else @toggle-navbar="toggleNavbar" />
           </div>
 				</div>
 				<ul :class="{ 'transform md:transform-none scale-y-0': !showMenu, 'h-full': showMenu }" class="h-0 md:h-auto flex flex-col flex-grow md:items-center gap-3 pb-4 md:pb-0 md:flex md:justify-end md:flex-row origin-top duration-300">

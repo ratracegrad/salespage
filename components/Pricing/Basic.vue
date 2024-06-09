@@ -9,7 +9,7 @@ import config from '~/config'
     </div>
 
     <div class="relative flex flex-col items-center justify-center gap-8 lg:flex-row lg:items-stretch">
-      <div v-for="(plan, planIdx) in config.pricing" :key="plan.priceId" class="relative max-w-lg w-full">
+      <div v-for="plan in config.pricing" :key="plan.priceId" class="relative max-w-lg w-full">
         <div v-if="plan.isFeatured" class="absolute left-1/2 top-0 z-20 -translate-x-1/2 -translate-y-1/2">
           <span
             class="border-0 rounded-full bg-primary p-3.5 text-xs font-semibold"

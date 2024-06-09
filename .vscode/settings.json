@@ -10,7 +10,7 @@
 		"strings": "on"
 	},
 	"prettier.enable": false,
-	"editor.formatOnSave": false,
+	"editor.formatOnSave": true,
 	"editor.codeActionsOnSave": {
 		"source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"

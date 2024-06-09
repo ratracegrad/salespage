@@ -32,16 +32,16 @@
   <div class="flex flex-col items-center justify-center h-screen bg-gray-100">
     <div class="w-full max-w-md p-6 space-y-6 bg-white rounded-lg shadow-lg">
       <h1 class="text-3xl font-bold text-center">Forgot Pasword</h1>
-      <form @submit.prevent="sendResetPasswordLink" class="space-y-4">
+      <form class="space-y-4" @submit.prevent="sendResetPasswordLink">
         <div>
           <label for="email" class="block mb-2 font-bold">Email</label>
           <input
-            v-model="email"
             id="email"
+            v-model="email"
             type="email"
             class="w-full p-2 border border-gray-400 rounded-md"
             placeholder="Enter your email"
-            required />
+            required >
         </div>
         <button
           :disabled="loading || email === ''"

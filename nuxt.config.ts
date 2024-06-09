@@ -90,6 +90,7 @@ export default defineNuxtConfig({
     "nuxt-purgecss",
     "@pinia/nuxt",
     "@nuxt/content",
+    "@nuxt/eslint"
   ],
 
   supabase: {

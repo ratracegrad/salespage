@@ -12,11 +12,11 @@
 				<form action="#" method="POST" class="space-y-4">
 					<div>
 						<label for="email" class="block text-sm font-medium">{{ $t('login.email') }}</label>
-						<input type="text" id="email" name="email" class="mt-1 p-2 w-full border rounded-md focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 transition-colors duration-300">
+						<input id="email" type="text" name="email" class="mt-1 p-2 w-full border rounded-md focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 transition-colors duration-300">
 					</div>
 					<div>
 						<label for="password" class="block text-sm font-medium">{{ $t('login.password') }}</label>
-						<input type="password" id="password" name="password" class="mt-1 p-2 w-full border rounded-md focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 transition-colors duration-300">
+						<input id="password" type="password" name="password" class="mt-1 p-2 w-full border rounded-md focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 transition-colors duration-300">
 					</div>
 					<div>
 						<button type="submit" class="w-full bg-black text-white p-2 rounded-md hover:bg-gray-800 focus:outline-none focus:bg-black focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 transition-colors duration-300">{{ $t('login.submit') }}</button>
@@ -31,7 +31,6 @@
 </template>
 
 <script setup lang="ts">
-import config from '~/config'
 </script>
 
 <style scoped>

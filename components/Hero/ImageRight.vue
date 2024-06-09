@@ -11,14 +11,13 @@
         <UtilsHeads class="mt-7"/>
       </div>
       <div class="flex justify-around md:block mt-8 md:mt-0 md:flex-1">
-        <img src='~/assets/images/Hero1.jpg' alt="hero image" class="mx-auto rounded-xl" />
+        <img src='~/assets/images/Hero1.jpg' alt="hero image" class="mx-auto rounded-xl" >
       </div>
     </div>
   </SectionWrapper>
 </template>
 
 <script setup lang="ts">
-const color = useColorMode()
 </script>
 
 <style scoped>

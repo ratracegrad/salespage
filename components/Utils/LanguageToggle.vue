@@ -9,7 +9,7 @@ watch(selectedLanguage, (value) => {
 
 <template>
   <select v-model="selectedLanguage" class="text-black/70 bg-white px-2 py-1 transition-all text-sm cursor-pointer hover:border-gray-600/30 border border-gray-200 rounded-lg outline-none appearance-none invalid:text-black/3">
-    <option v-for="locale in locales" :key="locale.code" :value="locale.code">{{ locale.name }}</option>
+    <option v-for="language in locales" :key="language.code" :value="language.code">{{ language.name }}</option>
   </select>
 </template>
 
