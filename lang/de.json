@@ -1,0 +1,41 @@
+{
+  "languages": {
+    "english": "English",
+    "german": "German",
+    "japanese": "Japanese"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "restricted": "Secret",
+    "login": "Log In with Github",
+    "logout": "Log Out",
+    "color-theme": {
+      "light": "Light",
+      "dark": "Dark"
+    }
+  },
+  "header": {
+    "title": "Nuxt 3 + Tailwind SaaS Template",
+    "subtitle": "A minimalistic template for building SaaS applications using Nuxt 3, Tailwind, and others"
+  },
+  "home": {
+    "photo-credit": "Photo by",
+    "counter": {
+      "name": "Counter",
+      "double": "Double the count",
+      "increment": "Increment"
+    },
+    "throw-error": "Throw error"
+  },
+  "about": {
+    "readme": "See Github readme file"
+  },
+  "errors": {
+    "404": "This page could not be found",
+    "other": "An error occurred",
+    "description": "Looks like you've followed a broken link or entered a URL that doesn't exist on this site.",
+    "go-back": "Go Back",
+    "try-again": "Try Again"
+  }
+}
