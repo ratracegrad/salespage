@@ -5,41 +5,41 @@
 <template>
   <main class="">
 		<!-- HERO Sections -->
-		<HeroCenter />
-		<HeroImageLeft />
+		<!-- <HeroCenter /> -->
+		<!-- <HeroImageLeft /> -->
 		<HeroImageRight />
-		<HeroImageBelow />
-		<HeroBlock />
+		<!-- <HeroImageBelow /> -->
+		<!-- <HeroBlock /> -->
 
 		<!-- UTILS Sections -->
 		<UtilsAsSeenOn />
 
 		<!-- FEATURES Section -->
-		<FeaturesColumnTwo />
-		<FeaturesColumnThree />
-		<FeaturesSideways />
+		<!-- <FeaturesColumnTwo /> -->
+		<!-- <FeaturesColumnThree /> -->
+		<!-- <FeaturesSideways /> -->
 		<FeaturesImageTop />
 
 		<!-- STATS Sections -->
 		<StatsBasic />
 
 		<!-- PRICING Sections -->
-		<PricingBasic />
+		<!-- <PricingBasic /> -->
 		<PricingStacked />
-		<PricingHorizontal />
+		<!-- <PricingHorizontal /> -->
 
 		<!-- TESTIMONIAL Sections -->
-		<TestimonialCard />
-		<TestimonialGrid />
+		<!-- <TestimonialCard /> -->
+		<!-- <TestimonialGrid /> -->
 		<TestimonialHorizontal />
-		<TestimonialThree />
+		<!-- <TestimonialThree /> -->
 
 		<!-- FAQ Sections -->
 		<FaqBasic />
-		<FaqSideways />
-		<FaqTable />
-		<FaqColumnTwo />
-		<FaqColumnThree />
+		<!-- <FaqSideways /> -->
+		<!-- <FaqTable /> -->
+		<!-- <FaqColumnTwo /> -->
+		<!-- <FaqColumnThree /> -->
 	</main>
 </template>
 

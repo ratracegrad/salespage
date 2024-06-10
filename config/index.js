@@ -327,7 +327,7 @@ export default {
   asSeenOn: [
     {
       id: 1,
-      icon: 'i-logos-appsignal',
+      icon: 'i-logos-cpanel',
     },
     {
       id: 2,
