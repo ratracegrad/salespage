@@ -5,7 +5,7 @@
 </template>
 
 <script>
-defineEmits(['toggleNavbar']);
+
 </script>
 
 <style lang="scss" scoped>
