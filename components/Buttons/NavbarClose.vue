@@ -4,8 +4,8 @@
 	</button>
 </template>
 
-<script>
-
+<script lang="ts" setup>
+defineEmits(['toggleNavbar'])
 </script>
 
 <style lang="scss" scoped>

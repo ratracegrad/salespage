@@ -1,6 +1,6 @@
 <template>
 	<nav class="w-full bg-navbarLightBackground dark:bg-navbarDarkBackground text-navbarLightText dark:text-navbarDarkText border-b-2 border-primary">
-		<div class="relative flex flex-col  px-8 mx-auto md:items-center md:justify-between md:flex-row">
+		<div class="relative flex flex-col px-8 mx-auto md:items-center md:justify-between md:flex-row">
 				<div class="flex flex-row items-center justify-between py-6 w-full">
 					<div class="flex items-center">
 						<ButtonsAppLogo />

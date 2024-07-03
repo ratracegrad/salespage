@@ -14,18 +14,21 @@
   "dependencies": {
     "@nuxt/content": "^2.12.1",
     "@nuxt/eslint": "^0.3.13",
+    "@nuxt/image": "^1.7.0",
     "@nuxtjs/i18n": "^8.3.1",
     "@nuxtjs/supabase": "^1.2.1",
     "@pinia/nuxt": "^0.5.1",
     "nuxt": "^3.11.2",
     "pinia": "^2.1.7",
     "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.0",
+    "vue-select": "4.0.0-beta.6"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^3.4.1",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/tailwindcss": "^6.12.0",
+    "@types/vue-select": "^3.16.8",
     "@vueuse/core": "^10.9.0",
     "@vueuse/nuxt": "^10.9.0",
     "nuxt-icon": "^0.6.10",

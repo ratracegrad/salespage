@@ -84,6 +84,7 @@ export default {
       login: true,
       show: true,
       icon: 'i-fa6-brands-google',
+      ariaLabel: 'Button to link to Google',
       url: 'https://google.com',
     },
 		{
@@ -91,6 +92,7 @@ export default {
       login: true,
       show: true,
       icon: 'i-fa6-brands-github',
+      ariaLabel: 'Button to link to GitHub',
       url: 'https://github.com',
     },
     {
@@ -98,6 +100,7 @@ export default {
       login: false,
       show: true,
       icon: 'i-fa6-brands-linkedin',
+      ariaLabel: 'Button to link to LinkedIn',
       url: 'https://linkedin.com',
     },
     {
@@ -105,6 +108,7 @@ export default {
       login: false,
       show: true,
       icon: 'i-fa6-brands-instagram',
+      ariaLabel: 'Button to link to Instagram',
       url: 'https://instagram.com',
     },
     {
@@ -112,6 +116,7 @@ export default {
       login: false,
       show: true,
       icon: 'i-fa6-brands-facebook',
+      ariaLabel: 'Button to link to Facebook',
       url: 'https://facebook.com',
     },
     {
@@ -119,6 +124,7 @@ export default {
       login: false,
       show: true,
       icon: 'i-fa6-brands-twitter',
+      ariaLabel: 'Button to link to Twitter',
       url: 'https://twitter.com',
     },
     {
@@ -126,6 +132,7 @@ export default {
       login: false,
       show: true,
       icon: 'i-fa6-brands-pinterest',
+      ariaLabel: 'Button to link to Pinterest',
       url: 'https://pinterest.com',
     },
   ],
@@ -354,4 +361,11 @@ export default {
       { name: 'footer.legal2', href: '/privacy' },
     ],
   },
+  blog: {
+    showBlog: true,
+    blogTitle: 'From the blog', // title displayed in the blog section
+    blogDescription: 'Honi soit qui mal y pense', // description displayed below blog title
+    blogPostsPerPage: 10, // make it 0 to disable pagination
+    blogShowImages: true,
+  }
 }

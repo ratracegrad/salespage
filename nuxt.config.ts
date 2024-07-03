@@ -3,6 +3,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      title: 'The Bland SaaS',
       viewport: 'width=device-width,initial-scale=1',
       link: [
         { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
@@ -11,11 +12,14 @@ export default defineNuxtConfig({
       ],
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Nuxt Saas Template' },
+        { name: 'description', content: 'Nuxt Saas Template using Tailwind, Supabase and Prisma' },
         { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
         { name: 'theme-color', media: '(prefers-color-scheme: light)', content: 'white' },
         { name: 'theme-color', media: '(prefers-color-scheme: dark)', content: '#222222' },
       ],
+      htmlAttrs: {
+        lang: 'en',
+      },
     },
     // https://v3.nuxtjs.org/api/configuration/nuxt-config/#layouttransition
     layoutTransition: { name: 'layout', mode: 'out-in' },
@@ -26,6 +30,12 @@ export default defineNuxtConfig({
 
   colorMode: {
     classSuffix: ''
+  },
+
+  content: {
+    highlight: {
+      theme: 'github-light',
+    },
   },
 
   css: [
@@ -90,7 +100,8 @@ export default defineNuxtConfig({
     "nuxt-purgecss",
     "@pinia/nuxt",
     "@nuxt/content",
-    "@nuxt/eslint"
+    "@nuxt/eslint",
+    '@nuxt/image',
   ],
 
   supabase: {

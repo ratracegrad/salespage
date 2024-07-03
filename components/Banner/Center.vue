@@ -4,7 +4,7 @@ import config from '~/config'
 
 <template>
   <section id="banner">
-    <div class="flex items-center justify-center px-6 py-2.5 bg-snowflake">
+    <div class="flex items-center justify-center px-6 py-2.5 bg-bannerLightBackground text-bannerLightText dark:bg-bannerDarkBackground dark:text-bannerDarkText hover:bg-bannerLightBackground/70 dark:hover:bg-bannerDarkBackground/70">
       <p class="text-semibold text-center">
         <NuxtLink :to="config.banner.url">
           {{ $t(`${config.banner.message}`) }}

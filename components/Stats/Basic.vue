@@ -5,7 +5,7 @@
 
 				<div v-for="stat in config.stats" :key="stat.id" class="flex flex-col justify-center items-center">
 					<h4 class="text-lg sm:text-xl font-semibold">{{ $t(`${stat.title}`) }}</h4>
-					<p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-primary">{{ stat.value }}</p>
+					<p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold">{{ stat.value }}</p>
 					<p class="mt-1">{{ $t(`${stat.description}`) }}</p>
 				</div>
 			</div>

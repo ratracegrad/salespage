@@ -1,9 +1,9 @@
 <template>
 	<nav class="bg-navbarLightBackground dark:bg-navbarDarkBackground text-navbarLightText dark:text-navbarDarkText border-b-2 border-primary">
 		<div class="relative flex flex-wrap items-center justify-between px-8 py-3 mb-3 ">
-			<div class="flex items-center">
+			<div class="flex items-center gap-2">
 				<ButtonsAppLogo />
-				<ButtonsAppName class="ml-3"/>
+				<ButtonsAppName />
 			</div>
 			<div class="lg:hidden">
 				<ButtonsNavbarOpen @toggle-navbar="toggleNavbar" />
@@ -44,7 +44,6 @@ import config from '~/config'
 const showMenu = ref(false)
 
 const toggleNavbar = () => {
-	console.log('toggleNavbar')
   showMenu.value = !showMenu.value
 }
 </script>

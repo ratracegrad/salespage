@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-
+defineEmits(['toggleNavbar'])
 </script>
 
 <style scoped>
