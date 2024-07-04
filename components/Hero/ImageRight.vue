@@ -11,7 +11,7 @@
         <UtilsHeads class="mt-7"/>
       </div>
       <div class="flex justify-around md:block mt-8 md:mt-0 md:flex-1">
-        <img src='~/assets/images/Hero4.png' alt="hero image" class="mx-auto rounded-xl" >
+        <NuxtImg src='/images/Hero4.png' alt="hero image" class="mx-auto rounded-xl" width="580" height="390" sizes="xs:340px md:460px lg:580" />
       </div>
     </div>
   </SectionWrapper>

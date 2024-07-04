@@ -234,7 +234,7 @@ export default {
       title: 'President at USA',
       testimony: 'testimonials.entry1',
       stars: 5,
-      img: '/testimonial1.jpg',
+      img: 'https://res.cloudinary.com/ratracegrad/image/upload/v1720126353/testimonial1_hixpek.webp',
     },
     {
       id: 2,
@@ -242,7 +242,7 @@ export default {
       title: 'Senator from Illinois',
       testimony: 'testimonials.entry2',
       stars: 4,
-      img: '/testimonial2.jpg',
+      img: 'https://res.cloudinary.com/ratracegrad/image/upload/v1720126352/testimonial2_oyi66h.webp',
     },
     {
       id: 3,
@@ -250,7 +250,7 @@ export default {
       title: 'Entrepreneur',
       testimony: 'testimonials.entry3',
       stars: 5,
-      img: '/testimonial3.jpg',
+      img: 'https://res.cloudinary.com/ratracegrad/image/upload/v1720126352/testimonial3_biy4ah.webp',
     },
     {
       id: 4,
@@ -258,7 +258,7 @@ export default {
       title: 'Electrician Extraordinaire',
       testimony: 'testimonials.entry4',
       stars: 5,
-      img: '/testimonial4.jpg',
+      img: 'https://res.cloudinary.com/ratracegrad/image/upload/v1720126353/testimonial4_njnzme.webp',
     },
     {
       id: 5,
@@ -266,7 +266,7 @@ export default {
       title: 'Scientist',
       testimony: 'testimonials.entry5',
       stars: 5,
-      img: '/testimonial5.jpg',
+      img: 'https://res.cloudinary.com/ratracegrad/image/upload/v1720126354/testimonial5_ui1z71.webp',
     },
     {
       id: 6,
@@ -274,7 +274,7 @@ export default {
       title: 'Nun',
       testimony: 'testimonials.entry6',
       stars: 4,
-      img: '/testimonial6.jpg',
+      img: 'https://res.cloudinary.com/ratracegrad/image/upload/v1720126355/testimonial6_aopdsp.webp',
     },
     {
       id: 7,
@@ -282,7 +282,7 @@ export default {
       title: 'Inventor',
       testimony: 'testimonials.entry7',
       stars: 5,
-      img: '/testimonial7.jpg',
+      img: 'https://res.cloudinary.com/ratracegrad/image/upload/v1720126355/testimonial7_dtpngu.webp',
     },
   ],
   features: [

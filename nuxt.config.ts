@@ -28,6 +28,28 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
   },
 
+  booster: {
+    componentAutoImport: false,
+    componentPrefix: undefined,
+    detection: {
+      performance: true,
+      browserSupport: true,
+      battery: true,
+    },
+    lazyOffset: {
+      component: '0%',
+      asset: '0%' 
+    },
+    optimizePreloads: true,
+    performanceMetrics: {
+      timing: {
+        fcp: 800,
+        dcl: 1200
+      }
+    },
+    targetFormats: ['webp', 'avif', 'jpg|jpeg|png|gif'],
+  },
+
   colorMode: {
     classSuffix: ''
   },
@@ -102,6 +124,7 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxt/eslint",
     '@nuxt/image',
+    'nuxt-booster',
   ],
 
   supabase: {

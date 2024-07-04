@@ -7,7 +7,7 @@
 		<!-- HERO Sections -->
 		<!-- <HeroCenter /> -->
 		<!-- <HeroImageLeft /> -->
-		<HeroImageRight />
+		<HeroImageRight critical />
 		<!-- <HeroImageBelow /> -->
 		<!-- <HeroBlock /> -->
 
