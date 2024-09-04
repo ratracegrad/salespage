@@ -1,14 +1,16 @@
 <script setup lang="ts">
 definePageMeta({
-  layout: "auth",
-});
+  layout: 'auth',
+})
 </script>
 
 <template>
-  <!-- <LoginEmailOnly /> -->
-  <!-- <LoginSocialOnly /> -->
-  <!-- <LoginImageLeft /> -->
-  <LoginEmailAndSocial />
+  <div id="Login">
+    <!-- <LoginEmailOnly /> -->
+    <!-- <LoginSocialOnly /> -->
+    <!-- <LoginImageLeft /> -->
+    <LoginEmailAndSocial />
+  </div>
 </template>
 
 <style scoped>

@@ -4,43 +4,43 @@
 
 <template>
   <main class="">
-		<!-- HERO Sections -->
-		<!-- <HeroCenter /> -->
-		<!-- <HeroImageLeft /> -->
-		<HeroImageRight critical />
-		<!-- <HeroImageBelow /> -->
-		<!-- <HeroBlock /> -->
+    <!-- HERO Sections -->
+    <!-- <HeroCenter /> -->
+    <!-- <HeroImageLeft /> -->
+    <HeroImageRight />
+    <!-- <HeroImageBelow /> -->
+    <!-- <HeroBlock /> -->
 
-		<!-- UTILS Sections -->
-		<UtilsAsSeenOn />
+    <!-- UTILS Sections -->
+    <UtilsAsSeenOn />
 
-		<!-- FEATURES Section -->
-		<!-- <FeaturesColumnTwo /> -->
-		<!-- <FeaturesColumnThree /> -->
-		<!-- <FeaturesSideways /> -->
-		<FeaturesImageTop />
+    <!-- FEATURES Section -->
+    <!-- <FeaturesColumnTwo /> -->
+    <!-- <FeaturesColumnThree /> -->
+    <!-- <FeaturesSideways /> -->
+    <FeaturesImageTop />
 
-		<!-- STATS Sections -->
-		<StatsBasic />
+    <!-- STATS Sections -->
+    <StatsBasic />
 
-		<!-- PRICING Sections -->
-		<!-- <PricingBasic /> -->
-		<PricingStacked />
-		<!-- <PricingHorizontal /> -->
+    <!-- PRICING Sections -->
+    <!-- <PricingBasic /> -->
+    <PricingStacked />
+    <!-- <PricingHorizontal /> -->
 
-		<!-- TESTIMONIAL Sections -->
-		<!-- <TestimonialCard /> -->
-		<!-- <TestimonialGrid /> -->
-		<TestimonialHorizontal />
-		<!-- <TestimonialThree /> -->
+    <!-- TESTIMONIAL Sections -->
+    <!-- <TestimonialCard /> -->
+    <!-- <TestimonialGrid /> -->
+    <TestimonialHorizontal />
+    <!-- <TestimonialThree /> -->
 
-		<!-- FAQ Sections -->
-		<FaqBasic />
-		<!-- <FaqSideways /> -->
-		<!-- <FaqTable /> -->
-		<!-- <FaqColumnTwo /> -->
-		<!-- <FaqColumnThree /> -->
-	</main>
+    <!-- FAQ Sections -->
+    <FaqBasic />
+    <!-- <FaqSideways /> -->
+    <!-- <FaqTable /> -->
+    <!-- <FaqColumnTwo /> -->
+    <!-- <FaqColumnThree /> -->
+  </main>
 </template>
 
 <style scoped>

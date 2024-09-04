@@ -5,6 +5,10 @@ definePageMeta({
     // Add in more middleware here
   ],
 })
+
+definePageMeta({
+  layout: 'blog',
+})
 </script>
 
 <template>

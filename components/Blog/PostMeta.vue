@@ -21,7 +21,10 @@ const formattedDate = computed(() => {
 
 <template>
   <div class="tags level-item are-medium has-addons">
-    <span class="tag is-rounded" :class="`is-${color}`">{{ author }}</span>
+    <span
+      class="tag is-rounded"
+      :class="`is-${color}`"
+    >{{ author }}</span>
     <span class="tag is-rounded">{{ formattedDate }}</span>
   </div>
 </template>

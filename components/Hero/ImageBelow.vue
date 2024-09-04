@@ -1,15 +1,22 @@
 <template>
-	<SectionWrapper id="hero" class="bg-heroLightBackground text-heroLightText dark:bg-heroDarkBackground dark:text-heroDarkText">
-		<div class="w-12/12 lg:w-11/12 xl:w-10/12 mx-auto">
-			<div class="sm:w-4/5 xxl:w-4/5 mx-auto text-center">
-				<HeroTitle />
-			</div>
-			<img class="aspect-video mx-auto rounded-xl my-10" src="~/assets/images/Hero1.jpg" alt="Hero Image">
-			<div class="mt-7 flex items-center justify-center gap-x-6">
-				<ButtonsHero />
-			</div>
-		</div>
-	</SectionWrapper>
+  <SectionWrapper
+    id="hero"
+    class="bg-heroLightBackground text-heroLightText dark:bg-heroDarkBackground dark:text-heroDarkText"
+  >
+    <div class="w-12/12 lg:w-11/12 xl:w-10/12 mx-auto">
+      <div class="sm:w-4/5 xxl:w-4/5 mx-auto text-center">
+        <HeroTitle />
+      </div>
+      <img
+        class="aspect-video mx-auto rounded-xl my-10"
+        src="~/assets/images/Hero1.jpg"
+        alt="Hero Image"
+      >
+      <div class="mt-7 flex items-center justify-center gap-x-6">
+        <ButtonsHero />
+      </div>
+    </div>
+  </SectionWrapper>
 </template>
 
 <script setup lang="ts">

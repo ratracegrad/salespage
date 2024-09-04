@@ -13,4 +13,4 @@ import config from '~/config'
 
 <style>
 </style>
-~/config
+

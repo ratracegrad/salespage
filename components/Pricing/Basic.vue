@@ -3,14 +3,24 @@ import config from '~/config'
 </script>
 
 <template>
-  <SectionWrapper id="pricing" class="bg-pricingLightBackground text-pricingLightText dark:bg-pricingDarkBackground dark:text-pricingDarkText">
+  <SectionWrapper
+    id="pricing"
+    class="bg-pricingLightBackground text-pricingLightText dark:bg-pricingDarkBackground dark:text-pricingDarkText"
+  >
     <div class="mb-20 w-full flex flex-col text-center">
       <PricingTitle />
     </div>
 
     <div class="relative flex flex-col items-center justify-center gap-8 lg:flex-row lg:items-stretch">
-      <div v-for="plan in config.pricing" :key="plan.priceId" class="relative max-w-lg w-full">
-        <div v-if="plan.isFeatured" class="absolute left-1/2 top-0 z-20 -translate-x-1/2 -translate-y-1/2">
+      <div
+        v-for="plan in config.pricing"
+        :key="plan.priceId"
+        class="relative max-w-lg w-full"
+      >
+        <div
+          v-if="plan.isFeatured"
+          class="absolute left-1/2 top-0 z-20 -translate-x-1/2 -translate-y-1/2"
+        >
           <span
             class="border-0 rounded-full bg-primary p-3.5 text-xs font-semibold"
           >
@@ -24,13 +34,19 @@ import config from '~/config'
               <p class="text-xl font-semibold leading-8 lg:text-2xl">
                 {{ $t(`${plan.name}`) }}
               </p>
-              <p v-if="plan.description" class="mt-2 font-semibold">
+              <p
+                v-if="plan.description"
+                class="mt-2 font-semibold"
+              >
                 {{ $t(`${plan.description}`) }}
               </p>
             </div>
           </div>
           <div class="flex justify-center gap-2">
-            <div v-if="plan.priceAnchor" class="mb-[4px] flex flex-col justify-end text-lg">
+            <div
+              v-if="plan.priceAnchor"
+              class="mb-[4px] flex flex-col justify-end text-lg"
+            >
               <p class="relative">
                 <span class="line-through">
                   {{ plan.priceAnchor }}
@@ -47,10 +63,29 @@ import config from '~/config'
               </p>
             </div>
           </div>
-          <ul v-if="plan.features" class="flex-1 leading-relaxed space-y-2.5">
-            <li v-for="(feature, fIdx) in plan.features" :key="fIdx" class="flex items-center gap-2">
-              <Icon v-if="feature.allowed" name="i-iconoir-check-circle" size="18px" class="shrink-0 font-bold text-green-700" aria-hidden="true" />
-              <Icon v-else name="i-iconoir-xmark-circle" size="18px" class="shrink-0 font-bold text-red-600" aria-hidden="true" />
+          <ul
+            v-if="plan.features"
+            class="flex-1 leading-relaxed space-y-2.5"
+          >
+            <li
+              v-for="(feature, fIdx) in plan.features"
+              :key="fIdx"
+              class="flex items-center gap-2"
+            >
+              <Icon
+                v-if="feature.allowed"
+                name="i-iconoir-check-circle"
+                size="18px"
+                class="shrink-0 font-bold text-green-700"
+                aria-hidden="true"
+              />
+              <Icon
+                v-else
+                name="i-iconoir-xmark-circle"
+                size="18px"
+                class="shrink-0 font-bold text-red-600"
+                aria-hidden="true"
+              />
               <span>{{ $t(`${feature.i18n}`) }}</span>
             </li>
           </ul>

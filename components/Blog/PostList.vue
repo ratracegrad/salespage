@@ -8,15 +8,23 @@ const { data: blogPostList } = useAsyncData('blogPostList', () => {
   <div class="mt-16 lg:mt-20 space-y-20 lg:space-y-20">
     <article
       v-for="blogPost in blogPostList"
-      :key="blogPost._path" class="relative isolate flex flex-col gap-8 lg:flex-row"
+      :key="blogPost._path"
+      class="relative isolate flex flex-col gap-8 lg:flex-row"
     >
       <div class="relative aspect-[16/9] lg:aspect-square sm:aspect-[2/1] lg:w-64 lg:shrink-0">
-        <img :src="blogPost.imageUrl" alt="" class="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover">
+        <img
+          :src="blogPost.imageUrl"
+          alt=""
+          class="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
+        >
         <div class="absolute inset-0 rounded-2xl ring-1 ring-gray-900/10 ring-inset" />
       </div>
       <div>
         <div class="flex items-center gap-x-4 text-xs">
-          <time :datetime="blogPost.published" class="text-light-baseLight dark:text-dark-baseLight">{{ blogPost.published }}</time>
+          <time
+            :datetime="blogPost.published"
+            class="text-light-baseLight dark:text-dark-baseLight"
+          >{{ blogPost.published }}</time>
           <span class="relative z-10 rounded-full bg-gray-300 px-3 py-1.5 font-medium text-light-base hover:bg-gray-100">{{ blogPost.category }}</span>
         </div>
         <div class="group relative max-w-xl">

@@ -1,11 +1,21 @@
 <template>
-  <SectionWrapper id="faq" class="bg-faqLightBackground text-faqLightText dark:bg-faqDarkBackground dark:text-faqDarkText">
+  <SectionWrapper
+    id="faq"
+    class="bg-faqLightBackground text-faqLightText dark:bg-faqDarkBackground dark:text-faqDarkText"
+  >
     <FaqTitle />
     <div class="mt-20">
       <dl class="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10">
-        <div v-for="faq in config.faqs" :key="faq.id">
-          <dt class="text-md font-semibold">{{ $t(`${faq.question}`) }}</dt>
-          <dd class="mt-2 text-md">{{ $t(`${faq.answer}`) }}</dd>
+        <div
+          v-for="faq in config.faqs"
+          :key="faq.id"
+        >
+          <dt class="text-md font-semibold">
+            {{ $t(`${faq.question}`) }}
+          </dt>
+          <dd class="mt-2 text-md">
+            {{ $t(`${faq.answer}`) }}
+          </dd>
         </div>
       </dl>
     </div>

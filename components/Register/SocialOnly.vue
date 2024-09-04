@@ -1,11 +1,16 @@
 <template>
-  <div class="m-0 p-0 w-screen h-screen flex items-center justify-center bg-registerLightBackground text-lightText dark:bg-registerDarkBackground dark:text-darkText:">
+  <div class="m-0 p-0 h-screen w-screen flex items-center justify-center mx-auto">
     <div class="max-w-lg w-full mx-auto">
       <div
         class="bg-white w-full border border-gray-200 rounded-2xl p-4 sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700"
       >
-        <form class="space-y-6" action="#">
-          <h1 class="text-3xl font-semibold mb-6 text-center">{{ $t('register.title') }}</h1>
+        <form
+          class="space-y-6"
+          action="#"
+        >
+          <h1 class="text-3xl font-semibold mb-6 text-center">
+            {{ $t('register.title') }}
+          </h1>
           <ButtonsRegisterSocial />
           <ButtonsReturnHome />
         </form>

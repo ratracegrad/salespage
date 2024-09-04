@@ -1,5 +1,9 @@
 <template>
-  <Icon name="mdi:rocket-launch" size="30px" class="text-primary dark:text-secondary"/>
+  <Icon
+    name="mdi:rocket-launch"
+    size="30px"
+    class="text-logoLight dark:text-logoDark"
+  />
 </template>
 
 <script setup lang="ts">

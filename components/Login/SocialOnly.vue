@@ -4,8 +4,13 @@
       <div
         class="bg-white w-full border border-gray-200 rounded-2xl p-4 sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700"
       >
-        <form class="space-y-6" action="#">
-          <h1 class="text-3xl font-semibold mb-6 text-center">{{ $t('login.title') }}</h1>
+        <form
+          class="space-y-6"
+          action="#"
+        >
+          <h1 class="text-3xl font-semibold mb-6 text-center">
+            {{ $t('login.title') }}
+          </h1>
           <ButtonsLoginSocial />
           <ButtonsReturnHome />
         </form>

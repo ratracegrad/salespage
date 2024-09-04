@@ -1,10 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-
   app: {
     head: {
       title: 'The Bland SaaS',
       viewport: 'width=device-width,initial-scale=1',
+      charset: 'utf-8',
       link: [
         { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
         { rel: 'icon', type: 'image/svg+xml', href: '/nuxt.svg' },
@@ -28,31 +28,11 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
   },
 
-  booster: {
-    componentAutoImport: false,
-    componentPrefix: undefined,
-    detection: {
-      performance: true,
-      browserSupport: true,
-      battery: true,
-    },
-    lazyOffset: {
-      component: '0%',
-      asset: '0%' 
-    },
-    optimizePreloads: true,
-    performanceMetrics: {
-      timing: {
-        fcp: 800,
-        dcl: 1200
-      }
-    },
-    targetFormats: ['webp', 'avif', 'jpg|jpeg|png|gif'],
+  colorMode: {
+    classSuffix: '',
   },
 
-  colorMode: {
-    classSuffix: ''
-  },
+  compatibilityDate: '2024-07-27',
 
   content: {
     highlight: {
@@ -67,45 +47,47 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
+  eslint: {
+    config: {
+      stylistic: true,
+    },
+  },
+
   googleFonts: {
     display: 'swap',
     families: {
-      "Montserrat": true,
-      "Roboto": true,
-      "Poppins": true,
-      "Source Sans 3": true,
-      "Josefin+Sans": true,
-      Inter: true,
-      "Inter var": true,
+      'Merriweather': true,
+      'JetBrains Mono': true,
+      'Inter': true,
     },
-    subsets: "latin-ext",
+    subsets: 'latin-ext',
   },
 
   i18n: {
-    strategy: "no_prefix",
+    strategy: 'no_prefix',
     locales: [
       {
-        code: "ENG",
-        file: "en.json",
-        name: "English",
-        flag: 'i-flag-us-4x3'
+        code: 'ENG',
+        file: 'en.json',
+        name: 'English',
+        flag: 'i-flag-us-4x3',
       },
       {
-        code: "DEU",
-        file: "de.json",
-        name: "Deutsch",
-        flag: 'i-flag-de-4x3'
+        code: 'DEU',
+        file: 'de.json',
+        name: 'Deutsch',
+        flag: 'i-flag-de-4x3',
       },
       {
-        code: "JPN",
-        file: "ja.json",
-        name: "日本語",
-        flag: 'i-flag-jp-4x3'
+        code: 'JPN',
+        file: 'ja.json',
+        name: '日本語',
+        flag: 'i-flag-jp-4x3',
       },
     ],
     lazy: true,
-    langDir: "lang",
-    defaultLocale: "ENG",
+    langDir: 'lang',
+    defaultLocale: 'ENG',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
@@ -113,22 +95,30 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    "@nuxtjs/color-mode",
-    "@nuxtjs/i18n",
-    "@nuxtjs/google-fonts",
-    "@nuxtjs/supabase",
-    "@nuxtjs/tailwindcss",
-    "nuxt-icon",
-    "nuxt-purgecss",
-    "@pinia/nuxt",
-    "@nuxt/content",
-    "@nuxt/eslint",
+    '@nuxtjs/color-mode',
+    '@nuxtjs/i18n',
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/supabase',
+    '@nuxtjs/tailwindcss',
+    '@pinia/nuxt',
+    '@nuxt/content',
     '@nuxt/image',
-    'nuxt-booster',
+    '@nuxt/eslint',
+    '@nuxt/icon',
   ],
 
+  runtimeConfig: {
+    // runtimeConfig has 2 keys: public and server
+    // public will be available on client side
+    // server will be available on server side
+    stripeSecret: '',
+    stripeWebhookSecret: '',
+    public: {
+      stripeKey: process.env.STRIPE_SECRET,
+    },
+  },
+  
   supabase: {
     redirect: false,
   },
-  
 })

@@ -1,64 +1,72 @@
 export default {
-	appName: 'app.name',
-	appDescription: 'app.description',
-	appDomain: 'http://localhost:3000',
+  appName: 'app.name',
+  appDescription: 'app.description',
+  appDomain: 'http://localhost:3000',
+  auth: {
+    google: {
+      login: true,
+    },
+    github: {
+      login: true,
+    },
+  },
   banner: {
     message: 'banner.message',
     url: 'https://theblandsaas.com',
   },
-	navbar: {
+  navbar: {
     showDarkToggle: true,
     showLanguageToggle: true,
-		menu: [
-			{
-				id: 1,
-				name: 'Home',
-				url: '/',
-				i18n: 'navbar.home'
-			},
-			{
-				id: 2,
-				name: 'About',
-				url: '/about',
-				i18n: 'navbar.about'
-			},
-			{
-				id: 3,
-				name: 'Contact',
-				url: '/contact',
-				i18n: 'navbar.contact'
-			}
-		],
-	},
-	hero: {
-		buttons: [
-			{
-				id: 1,
-				name: 'Get Started',
-				url: '/get-started',
-				i18n: 'hero.getStarted'
-			},
-			{
-				id: 2,
-				name: 'Learn More',
-				url: '/learn-more',
-				i18n: 'hero.learnMore'
-			}
-		]
-	},
-	faqs: [
-		{
-			id: 1,
-			question: 'faq.question1',
-			answer: 'faq.answer1',
+    menu: [
+      {
+        id: 1,
+        name: 'Home',
+        url: '/',
+        i18n: 'navbar.home',
+      },
+      {
+        id: 2,
+        name: 'About',
+        url: '/about',
+        i18n: 'navbar.about',
+      },
+      {
+        id: 3,
+        name: 'Contact',
+        url: '/contact',
+        i18n: 'navbar.contact',
+      },
+    ],
+  },
+  hero: {
+    buttons: [
+      {
+        id: 1,
+        name: 'Get Started',
+        url: '/get-started',
+        i18n: 'hero.getStarted',
+      },
+      {
+        id: 2,
+        name: 'Learn More',
+        url: '/learn-more',
+        i18n: 'hero.learnMore',
+      },
+    ],
+  },
+  faqs: [
+    {
+      id: 1,
+      question: 'faq.question1',
+      answer: 'faq.answer1',
       isOpen: false,
-		},
-		{
-			id: 2,
-			question: 'faq.question2',
-			answer: 'faq.answer2',
+    },
+    {
+      id: 2,
+      question: 'faq.question2',
+      answer: 'faq.answer2',
       isOpen: false,
-		},
+    },
     {
       id: 3,
       question: 'faq.question3',
@@ -76,10 +84,10 @@ export default {
       question: 'faq.question5',
       answer: 'faq.answer5',
       isOpen: false,
-    }
-	],
-	social: [
-		{
+    },
+  ],
+  social: [
+    {
       name: 'Google',
       login: true,
       show: true,
@@ -87,7 +95,7 @@ export default {
       ariaLabel: 'Button to link to Google',
       url: 'https://google.com',
     },
-		{
+    {
       name: 'GitHub',
       login: true,
       show: true,
@@ -166,8 +174,8 @@ export default {
           id: 4,
           i18n: 'pricing.plans[0].feature4',
           allowed: false,
-        }
-      ]
+        },
+      ],
     },
     {
       priceId: 'price_1JGZ2tG8g5ZQX9Z0Z1Z0Z1Z1',
@@ -195,8 +203,8 @@ export default {
         {
           i18n: 'pricing.plans[1].feature1',
           allowed: false,
-        }
-      ]
+        },
+      ],
     },
     {
       priceId: 'price_1JGZ2tG8g5ZQX9Z0Z1Z0Z1Z2',
@@ -223,9 +231,9 @@ export default {
         {
           i18n: 'pricing.plans[2].feature4',
           allowed: true,
-        }
-      ]
-    }
+        },
+      ],
+    },
   ],
   testimonials: [
     {
@@ -286,18 +294,18 @@ export default {
     },
   ],
   features: [
-		{
-			id: 1,
-			title: 'features.title1',
-			description: 'features.description1',
+    {
+      id: 1,
+      title: 'features.title1',
+      description: 'features.description1',
       icon: 'i-fa6-solid-bullseye',
-		},
-		{
-			id: 2,
-			title: 'features.title2',
-			description: 'features.description2',
+    },
+    {
+      id: 2,
+      title: 'features.title2',
+      description: 'features.description2',
       icon: 'i-fa6-solid-database',
-		},
+    },
     {
       id: 3,
       title: 'features.title3',
@@ -308,9 +316,9 @@ export default {
       id: 4,
       title: 'features.title4',
       description: 'features.description4',
-      icon: 'i-fa6-solid-pen'
+      icon: 'i-fa6-solid-pen',
     },
-	],
+  ],
   stats: [
     {
       id: 1,
@@ -367,5 +375,5 @@ export default {
     blogDescription: 'Honi soit qui mal y pense', // description displayed below blog title
     blogPostsPerPage: 10, // make it 0 to disable pagination
     blogShowImages: true,
-  }
+  },
 }

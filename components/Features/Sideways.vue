@@ -3,14 +3,21 @@ import config from '~/config'
 </script>
 
 <template>
-  <SectionWrapper id="features" class="bg-featureLightBackground dark:bg-featureDarkBackground text-featureLightText dark:text-featureDarkText">
+  <SectionWrapper
+    id="features"
+    class="bg-featureLightBackground dark:bg-featureDarkBackground text-featureLightText dark:text-featureDarkText"
+  >
     <div class="lg:grid lg:grid-cols-12 lg:gap-8">
       <div class="lg:col-span-5">
         <FeaturesTitle />
       </div>
       <div class="mt-10 lg:col-span-7 lg:mt-0">
         <dl class="space-y-8">
-          <div v-for="feature in config.features" :key="feature.id" class="flex flex-col space-y-8">
+          <div
+            v-for="feature in config.features"
+            :key="feature.id"
+            class="flex flex-col space-y-8"
+          >
             <dt class="text-md font-semibold">
               {{ $t(`${feature.title}`) }}
             </dt>

@@ -2,5 +2,5 @@
 	"i18n-ally.localesPaths": [
 		"lang"
 	],
-	"eslint.experimental.useFlatConfig": true,
+	"eslint.useFlatConfig": true,
 }

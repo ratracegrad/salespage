@@ -4,10 +4,26 @@ const { path } = useRoute()
 const { data: blogPost } = await useAsyncData(`content-${path}`, () => {
   return queryContent().where({ _path: path }).findOne()
 })
+
+definePageMeta({
+  layout: 'blog',
+})
 </script>
 
 <template>
-  <main>
+  <SectionWrapper id="blog">
+    <div class="flex flex-col border border-b border-gray-300 -mt-12 mr-0 mb-12 ml-0 relative">
+      <div class="title py-14 px-12 text-2xl font-semibold uppercase leading-7 tracking-wide">
+        {{ blogPost.title }}
+      </div>
+      <div>
+        {{ blogPost.description }}
+      </div>
+      
+    </div>
+    <pre><ContentDoc /></pre>
+  </SectionWrapper>
+  <!-- <main>
     <TheHero>
       <template #default>
         {{ blogPost.title }}
@@ -16,7 +32,7 @@ const { data: blogPost } = await useAsyncData(`content-${path}`, () => {
       <template #subtitle>
         <BlogPostMeta
           :author="blogPost.author"
-          :date="blogPost.dates.published"
+          :date="blogPost.published"
           color="dark"
         />
       </template>
@@ -34,7 +50,7 @@ const { data: blogPost } = await useAsyncData(`content-${path}`, () => {
         </div>
       </section>
     </div>
-  </main>
+  </main> -->
 </template>
 
 <style>
