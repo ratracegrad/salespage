@@ -11,6 +11,12 @@
   "banner": {
     "message": "The Bland SaaS is now available. Get started today!"
   },
+  "empty": {
+    "title": "Page not found",
+    "subtitle": "404",
+    "description": "Sorry, we couldn’t find the page you’re looking for.",
+    "back": "Go back home"
+  },
   "navbar": {
     "home": "Home",
     "about": "About",
@@ -120,7 +126,7 @@
     "entry4": "Commodo amet fugiat excepteur sunt qui ea elit cupidatat ullamco consectetur ipsum elit consequat. Elit sunt proident ea nulla ad nulla dolore ad pariatur tempor non. Sint veniam minim et ea.",
     "entry5": "Commodo amet fugiat excepteur sunt qui ea elit cupidatat ullamco consectetur ipsum elit consequat. Elit sunt proident ea nulla ad nulla dolore ad pariatur tempor non. Sint veniam minim et ea.",
     "entry6": "Commodo amet fugiat excepteur sunt qui ea elit cupidatat ullamco consectetur ipsum elit consequat. Elit sunt proident ea nulla ad nulla dolore ad pariatur tempor non. Sint veniam minim et ea.",
-    "entry7": "Commodo amet fugiat excepteur sunt qui ea elit cupidatat ullamco consectetur ipsum elit consequat. Elit sunt proident ea nulla ad nulla dolore ad pariatur tempor non. Sint veniam minim et ea.",
+    "entry7": "Commodo amet fugiat excepteur sunt qui ea elit cupidatat ullamco consectetur ipsum elit consequat. Elit sunt proident ea nulla ad nulla dolore ad pariatur tempor non. Sint veniam minim et ea."
   },
   "faq": {
     "title": "Frequently Asked Questions",
@@ -148,7 +154,7 @@
     "title3": "Results-Driven Digital Marketing",
     "description3": "Digital marketing potential customers using the internet & other forms of digital communication",
     "title4": "Custom Software Development",
-    "description4": "Custom Software Development is the process of conceptualizing, designing, building & deploying",
+    "description4": "Custom Software Development is the process of conceptualizing, designing, building & deploying"
   },
   "stats": {
     "title1": "Accuracy Rate",

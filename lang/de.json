@@ -4,6 +4,12 @@
     "german": "German",
     "japanese": "Japanese"
   },
+  "empty": {
+    "title": "Seite nicht gefunden",
+    "subtitle": "404",
+    "description": "Leider konnten wir die gesuchte Seite nicht finden.",
+    "back": "Zurück zur Startseite"
+  },
   "navigation": {
     "home": "Home",
     "about": "About",
