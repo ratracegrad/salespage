@@ -1,6 +1,6 @@
 <template>
   <div
-    class="grid min-h-full place-items-center bg-white px-6 py-24 text-center sm:py-32 lg:px-8"
+    class="grid min-h-full place-items-center bg-white px-6 py-32 text-center sm:py-60 lg:px-8"
   >
     <p class="text-base font-semibold text-violet-600 dark:text-slate-900">
       {{ $t('empty.subtitle') }}
