@@ -117,7 +117,7 @@ export default defineNuxtConfig({
       stripeKey: process.env.STRIPE_SECRET,
     },
   },
-  
+
   supabase: {
     redirect: false,
   },

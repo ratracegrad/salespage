@@ -7,7 +7,7 @@ const navigation = [...config.footer.links, ...config.footer.legal]
 <template>
   <footer
     id="footer"
-    class="relative isolate bg-footerLightBackground text-footerLightText dark:bg-footerDarkBackground dark:text-footerDarkText border-t-2 border-primary dark:border-secondary"
+    class="relative isolate border-t-2 border-primary bg-footerLightBackground text-footerLightText dark:border-secondary dark:bg-footerDarkBackground dark:text-footerDarkText"
   >
     <div class="mx-auto max-w-7xl overflow-hidden px-6 lg:px-8">
       <nav
@@ -26,11 +26,11 @@ const navigation = [...config.footer.links, ...config.footer.legal]
           </NuxtLink>
         </div>
       </nav>
-      <div class="mb-10 flex justify-center items-center">
+      <div class="mb-10 flex items-center justify-center">
         <ButtonsSocialLinks />
       </div>
 
-      <UtilsCopyrightNotice class="text-center text-sm mb-10" />
+      <UtilsCopyrightNotice class="mb-10 text-center text-sm" />
     </div>
   </footer>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-end px-10 py-3 bg-bannerLightBackground dark:bg-bannerDarkBackground text-bannerLightText dark:text-bannerDarkText">
+  <div class="flex items-center justify-end bg-bannerLightBackground px-10 py-3 text-bannerLightText dark:bg-bannerDarkBackground dark:text-bannerDarkText">
     <ButtonsSocialLinks />
   </div>
 </template>

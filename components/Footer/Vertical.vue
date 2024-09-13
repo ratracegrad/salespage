@@ -6,7 +6,7 @@ import config from '~/config'
   <footer
     id="footer"
     aria-labelledby="footer-heading"
-    class="relative isolate bg-footerLightBackground text-footerLightText dark:bg-footerDarkBackground dark:text-footerDarkText border-t-2 border-footerLightBackground"
+    class="relative isolate border-t-2 border-footerLightBackground bg-footerLightBackground text-footerLightText dark:bg-footerDarkBackground dark:text-footerDarkText"
   >
     <div class="mx-auto max-w-7xl px-6 py-8 lg:px-8">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
@@ -17,7 +17,7 @@ import config from '~/config'
           <ButtonsSocialLinks class="flex sm:space-x-6" />
           <UtilsCopyrightNotice />
         </div>
-        <div class="grid grid-cols-2 mt-16 gap-8 xl:col-span-2 xl:mt-0">
+        <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div class="mt-10 md:mt-0">
               <h3 class="font-semibold leading-6">

@@ -1,18 +1,18 @@
 <template>
-  <div class="flex flex-col md:flex-row justify-center align-center gap-3">
-    <div class="-space-x-5 flex justify-start">
+  <div class="align-center flex flex-col justify-center gap-3 md:flex-row">
+    <div class="flex justify-start -space-x-5">
       <div
         v-for="testimonial in config.testimonials"
         :key="testimonial.id"
       >
         <img
-          class="w-12 h-12 object-cover object-center rounded-full"
+          class="size-12 rounded-full object-cover object-center"
           :src="testimonial.img"
           alt=""
         >
       </div>
     </div>
-    <div class="flex flex-col justify-center items-center md:items-start gap-1 font-semibold text-xl">
+    <div class="flex flex-col items-center justify-center gap-1 text-xl font-semibold md:items-start">
       <UtilsStars :entry="{ stars: 5 }" />
       {{ $t('testimonials.headComment') }}
     </div>

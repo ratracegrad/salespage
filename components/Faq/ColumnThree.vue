@@ -13,7 +13,7 @@
           <dt class="text-md font-semibold">
             {{ $t(`${faq.question}`) }}
           </dt>
-          <dd class="mt-2 text-md">
+          <dd class="text-md mt-2">
             {{ $t(`${faq.answer}`) }}
           </dd>
         </div>

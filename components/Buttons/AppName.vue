@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    class="text-logoLight dark:text-logoDark text-xl font-bold leading-relaxed inline-block whitespace-nowrap"
+    class="inline-block whitespace-nowrap text-xl font-bold leading-relaxed text-logoLight dark:text-logoDark"
     to="/"
   >
     {{ $t(`${config.appName}`) }}

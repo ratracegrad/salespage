@@ -10,20 +10,20 @@ import config from '~/config'
     <div class="mx-auto max-w-xl text-center">
       <TestimonialTitle />
     </div>
-    <div class="mx-auto mt-16 flow-root max-w-2xl lg:mx-0 sm:mt-20 lg:max-w-none">
-      <div class="grid lg:grid-cols-3 sm:grid-cols-1 sm:-mx-4">
+    <div class="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
+      <div class="grid sm:-mx-4 sm:grid-cols-1 lg:grid-cols-3">
         <div
           v-for="testimonial in config.testimonials"
           :key="testimonial.id"
           class="pt-8 sm:inline-block sm:w-full sm:px-4"
         >
-          <figure class="rounded-2xl text-sm leading-6 bg-white border border-gray-200 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+          <figure class="rounded-2xl border border-gray-200 bg-white text-sm leading-6 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
             <blockquote class="p-8">
               <p>{{ $t(`${testimonial.testimony}`) }}</p>
             </blockquote>
-            <figcaption class="mt-6 flex items-center gap-x-4 h-24 bg-testimonialDarkBackground dark:bg-testimonialLightBackground px-8 text-testimonialDarkText dark:text-testimonialLightText">
+            <figcaption class="mt-6 flex h-24 items-center gap-x-4 bg-testimonialDarkBackground px-8 text-testimonialDarkText dark:bg-testimonialLightBackground dark:text-testimonialLightText">
               <img
-                class="h-10 w-10 object-cover object-center rounded-full"
+                class="size-10 rounded-full object-cover object-center"
                 :src="testimonial.img"
                 alt=""
               >

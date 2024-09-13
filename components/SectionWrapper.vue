@@ -3,7 +3,7 @@
     :id="id"
     :class="`relative isolate w-full`"
   >
-    <div class="mx-auto max-w-7xl px-6 py-10 lg:py-20 lg:px-8">
+    <div class="mx-auto max-w-7xl px-6 py-10 lg:px-8 lg:py-20">
       <slot />
     </div>
   </section>

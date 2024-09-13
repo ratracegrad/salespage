@@ -9,19 +9,19 @@
     <div
       v-for="faq in config.faqs"
       :key="faq.id"
-      class="text-left space-y-12 px-2 xl:px-16 mt-12"
+      class="mt-12 space-y-12 px-2 text-left xl:px-16"
     >
       <div class="mt-4 flex">
         <div>
-          <div class="flex items-center h-16 border-l-4 border-primary dark:border-secondary">
-            <span class="text-4xl px-4">Q.</span>
+          <div class="flex h-16 items-center border-l-4 border-primary dark:border-secondary">
+            <span class="px-4 text-4xl">Q.</span>
           </div>
-          <div class="flex items-center h-16 border-l-4 border-gray-400">
-            <span class="text-4xl px-4">A.</span>
+          <div class="flex h-16 items-center border-l-4 border-gray-400">
+            <span class="px-4 text-4xl">A.</span>
           </div>
         </div>
         <div>
-          <div class="flex items-center h-16">
+          <div class="flex h-16 items-center">
             <span class="text-lg font-bold">{{ $t(`${faq.question}`) }}</span>
           </div>
           <div class="flex items-center py-2">

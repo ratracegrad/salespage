@@ -3,7 +3,7 @@ import config from '~/config'
 </script>
 
 <template>
-  <div class="flex items-center flex-wrap gap-x-2">
+  <div class="flex flex-wrap items-center gap-x-2">
     <template
       v-for="social in config.social"
       :key="social.name"

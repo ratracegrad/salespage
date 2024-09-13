@@ -1,5 +1,5 @@
 <template>
-  <main class="p-0 m-0 bg-lightBackground dark:bg-darkBackground text-lightText dark:text-darkText">
+  <main class="m-0 bg-lightBackground p-0 text-lightText dark:bg-darkBackground dark:text-darkText">
     <!-- <BannerCenter /> -->
     <BannerSocial />
     <NavbarMenuCenter />

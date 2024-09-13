@@ -3,17 +3,17 @@
     id="stats"
     class="bg-statsLightBackground text-statsLightText dark:bg-statsDarkBackground dark:text-statsDarkText"
   >
-    <div class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-      <div class="flex justify-center items-center flex-wrap mt-10 gap-6 sm:gap-12 lg:gap-24">
+    <div class="mx-auto px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+      <div class="mt-10 flex flex-wrap items-center justify-center gap-6 sm:gap-12 lg:gap-24">
         <div
           v-for="stat in config.stats"
           :key="stat.id"
-          class="flex flex-col justify-center items-center"
+          class="flex flex-col items-center justify-center"
         >
-          <h4 class="text-lg sm:text-xl font-semibold">
+          <h4 class="text-lg font-semibold sm:text-xl">
             {{ $t(`${stat.title}`) }}
           </h4>
-          <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold">
+          <p class="mt-2 text-4xl font-bold sm:mt-3 sm:text-6xl">
             {{ stat.value }}
           </p>
           <p class="mt-1">

@@ -7,7 +7,7 @@ import config from '~/config'
     id="pricing"
     class="bg-pricingLightBackground text-pricingLightText dark:bg-pricingDarkBackground dark:text-pricingDarkText"
   >
-    <div class="mb-20 w-full flex flex-col text-center">
+    <div class="mb-20 flex w-full flex-col text-center">
       <PricingTitle />
     </div>
 
@@ -15,20 +15,20 @@ import config from '~/config'
       <div
         v-for="plan in config.pricing"
         :key="plan.priceId"
-        class="relative max-w-lg w-full"
+        class="relative w-full max-w-lg"
       >
         <div
           v-if="plan.isFeatured"
           class="absolute left-1/2 top-0 z-20 -translate-x-1/2 -translate-y-1/2"
         >
           <span
-            class="border-0 rounded-full bg-primary p-3.5 text-xs font-semibold"
+            class="rounded-full border-0 bg-primary p-3.5 text-xs font-semibold"
           >
             {{ $t('pricing.featured') }}
           </span>
         </div>
 
-        <div class="relative z-10 h-full flex flex-col gap-5 rounded-3xl bg-white text-pricingLightText dark:bg-white dark:text-pricingLightText p-8 lg:gap-8">
+        <div class="relative z-10 flex h-full flex-col gap-5 rounded-3xl bg-white p-8 text-pricingLightText dark:bg-white dark:text-pricingLightText lg:gap-8">
           <div class="flex items-center justify-between gap-4">
             <div>
               <p class="text-xl font-semibold leading-8 lg:text-2xl">
@@ -65,7 +65,7 @@ import config from '~/config'
           </div>
           <ul
             v-if="plan.features"
-            class="flex-1 leading-relaxed space-y-2.5"
+            class="flex-1 space-y-2.5 leading-relaxed"
           >
             <li
               v-for="(feature, fIdx) in plan.features"

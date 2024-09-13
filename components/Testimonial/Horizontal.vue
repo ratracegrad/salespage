@@ -6,16 +6,16 @@
     <div class="mx-auto max-w-xl text-center">
       <TestimonialTitle />
     </div>
-    <div class="mx-auto mt-16 flow-root max-w-2xl lg:mx-0 sm:mt-20 lg:max-w-none">
-      <div class="grid lg:grid-cols-2 sm:grid-cols-1 sm:-mx-4 mx-auto">
+    <div class="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
+      <div class="mx-auto grid sm:-mx-4 sm:grid-cols-1 lg:grid-cols-2">
         <div
           v-for="testimonial in config.testimonials"
           :key="testimonial.id"
           class="pt-8 sm:inline-block sm:w-full sm:px-4"
         >
-          <div class="flex flex-col items-center mx-auto rounded-lg shadow md:flex-row md:max-w-xl bg-white border border-gray-200 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+          <div class="mx-auto flex flex-col items-center rounded-lg border border-gray-200 bg-white shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 md:max-w-xl md:flex-row">
             <NuxtImg
-              class="object-cover object-center rounded-t-lg w-full h-96 md:w-64 md:rounded-none md:rounded-s-lg"
+              class="h-96 w-full rounded-t-lg object-cover object-center md:w-64 md:rounded-none md:rounded-s-lg"
               fit="fill"
               loading="lazy"
               width="16rem"

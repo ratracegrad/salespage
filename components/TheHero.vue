@@ -3,7 +3,7 @@
 <template>
   <section class="hero is-info is-medium is-bold">
     <div class="hero-body">
-      <div class="container has-text-centered">
+      <div class="has-text-centered container">
         <h1 class="title is-size-1">
           <slot />
         </h1>
