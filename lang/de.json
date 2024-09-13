@@ -20,10 +20,10 @@
   },
   "hero": {
     "title": "Nuxt 3 + Tailwind",
-    "subtitle": "SaaS Template",
-    "description": "A minimalistic template for building SaaS applications using Nuxt 3, Tailwind, Prisma and Supabase",
-    "cta": "Get Started",
-    "cta2": "Learn More"
+    "subtitle": "SaaS-Vorlage",
+    "description": "Eine minimalistische Vorlage zum Erstellen von SaaS-Anwendungen mit Nuxt 3, Tailwind, Prisma und Supabase",
+    "cta": "Legen Sie los",
+    "cta2": "Erfahren Sie mehr"
   },
   "login": {
     "title": "Login",
