@@ -5,7 +5,7 @@ export default withNuxt(
   ...tailwind.configs['flat/recommended'],
   {
     rules: {
-      'tailwindcss/migration-from-tailwind-2': OfflineAudioCompletionEvent,
+      'tailwindcss/migration-from-tailwind-2': 'off',
     },
   },
 )
