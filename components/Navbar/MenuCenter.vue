@@ -12,8 +12,8 @@
         <ButtonsNavbarMenu />
       </ul>
       <div class="hidden lg:flex items-center gap-3 lg:ml-auto">
-        <UtilsLanguageToggle v-if="config.navbar.showLanguageToggle" />
         <UtilsDarkToggle v-if="config.navbar.showDarkToggle" />
+        <UtilsLanguageToggle v-if="config.navbar.showLanguageToggle" />
         <ButtonsLogin />
       </div>
     </div>

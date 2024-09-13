@@ -1,5 +1,5 @@
 <template>
-  <div class="flex md:flex-row flex-col items-center gap-2 box-border">
+  <div class="flex md:flex-row flex-col items-center gap-3 box-border">
     <NuxtLink
       class="px-3.5 py-2.5 mt-4 w-full md:mt-0 text-sm text-center shadow-sm rounded-md bg-violet-900 text-white dark:bg-white dark:text-slate-900 border-violet-900 dark:border-slate-900 border-2"
       to="/login"

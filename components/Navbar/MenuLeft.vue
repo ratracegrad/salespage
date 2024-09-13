@@ -13,8 +13,8 @@
           </ul>
         </div>
         <div class="hidden lg:flex justify-start items-center gap-3">
-          <UtilsLanguageToggle v-if="config.navbar.showLanguageToggle" />
           <UtilsDarkToggle v-if="config.navbar.showDarkToggle" />
+          <UtilsLanguageToggle v-if="config.navbar.showLanguageToggle" />
           <ButtonsLogin />
         </div>
         <button class="cursor-pointer text-2xl lg:hidden focus:outline-none">
