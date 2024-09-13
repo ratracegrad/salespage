@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-2 flex items-center">
+  <div class="flex items-center">
     <button
       v-if="isDark"
       type="button"

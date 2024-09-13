@@ -22,13 +22,13 @@
         class="flex h-0 flex-grow origin-top flex-col gap-3 duration-100  lg:flex lg:h-auto lg:flex-row lg:items-center lg:justify-end lg:pb-0"
       >
         <ButtonsNavbarMenu />
+        <div class="hidden lg:block">
+          <UtilsDarkToggle v-if="config.navbar.showDarkToggle" />
+        </div>
         <UtilsLanguageToggle
           v-if="config.navbar.showLanguageToggle"
           class="hidden lg:block"
         />
-        <div class="hidden lg:block">
-          <UtilsDarkToggle v-if="config.navbar.showDarkToggle" />
-        </div>
         <ButtonsLogin />
       </ul>
     </div>
