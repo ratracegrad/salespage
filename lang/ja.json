@@ -11,6 +11,12 @@
   "banner": {
     "message": "The Bland SaaS is now available. Get started today!"
   },
+  "empty": {
+    "title": "ページが見つかりません",
+    "subtitle": "404",
+    "description": "申し訳ありませんが、お探しのページは見つかりませんでした。",
+    "back": "ホームページに戻る"
+  },
   "navbar": {
     "home": "Home",
     "about": "About",
