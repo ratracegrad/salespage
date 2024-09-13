@@ -1,5 +1,5 @@
 <template>
-  <div class="text-sm font-medium text-gray-500 dark:text-gray-300 mt-3">
+  <div class="mt-3 text-sm font-medium text-gray-500 dark:text-gray-300">
     {{ $t('register.haveAccount') }}
     <NuxtLink
       to="/login"

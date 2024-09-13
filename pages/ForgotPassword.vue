@@ -32,7 +32,7 @@
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center h-screen bg-gray-100">
+  <div class="flex h-screen flex-col items-center justify-center bg-gray-100">
     <!-- <div class="w-full max-w-md p-6 space-y-6 bg-white rounded-lg shadow-lg">
       <h1 class="text-3xl font-bold text-center">
         Forgot Password

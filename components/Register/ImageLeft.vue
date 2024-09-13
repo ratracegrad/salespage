@@ -1,7 +1,7 @@
 <template>
-  <div class="m-0 p-0 h-screen w-screen flex items-center justify-center mx-auto">
+  <div class="m-0 mx-auto flex h-screen w-screen items-center justify-center p-0">
     <!-- Left Pane -->
-    <div class="hidden h-full w-full lg:w-1/2 lg:flex items-center justify-center flex-1 bg-white">
+    <div class="hidden size-full flex-1 items-center justify-center bg-white lg:flex lg:w-1/2">
       <div class="max-w-md text-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -258,13 +258,13 @@
       </div>
     </div>
     <!-- Right Pane -->
-    <div class="h-full w-full lg:w-1/2 flex items-center justify-center bg-gray-100">
-      <div class="max-w-md w-full p-6">
-        <h1 class="text-3xl font-semibold mb-6 text-center">
+    <div class="flex size-full items-center justify-center bg-gray-100 lg:w-1/2">
+      <div class="w-full max-w-md p-6">
+        <h1 class="mb-6 text-center text-3xl font-semibold">
           {{ $t('register.title') }}
         </h1>
         <ButtonsRegisterSocial />
-        <div class="mt-4 text-sm text-center">
+        <div class="mt-4 text-center text-sm">
           <p>{{ $t('register.or') }}</p>
         </div>
         <form
@@ -283,7 +283,7 @@
               name="email"
               placeholder="Email address"
               autocomplete="email"
-              class="mt-1 p-2 w-full border rounded-md focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 transition-colors duration-300"
+              class="mt-1 w-full rounded-md border p-2 transition-colors duration-300 focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2"
             >
           </div>
           <div>
@@ -297,13 +297,13 @@
               name="password"
               placeholder="Password"
               autocomplete="current-password"
-              class="mt-1 p-2 w-full border rounded-md focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 transition-colors duration-300"
+              class="mt-1 w-full rounded-md border p-2 transition-colors duration-300 focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2"
             >
           </div>
           <div>
             <button
               type="submit"
-              class="w-full bg-black text-white p-2 rounded-md hover:bg-gray-800 focus:outline-none focus:bg-black focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 transition-colors duration-300"
+              class="w-full rounded-md bg-black p-2 text-white transition-colors duration-300 hover:bg-gray-800 focus:bg-black focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
             >
               {{ $t('register.submit') }}
             </button>

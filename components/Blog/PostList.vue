@@ -5,19 +5,19 @@ const { data: blogPostList } = useAsyncData('blogPostList', () => {
 </script>
 
 <template>
-  <div class="mt-16 lg:mt-20 space-y-20 lg:space-y-20">
+  <div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
     <article
       v-for="blogPost in blogPostList"
       :key="blogPost._path"
       class="relative isolate flex flex-col gap-8 lg:flex-row"
     >
-      <div class="relative aspect-[16/9] lg:aspect-square sm:aspect-[2/1] lg:w-64 lg:shrink-0">
+      <div class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
         <img
           :src="blogPost.imageUrl"
           alt=""
-          class="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
+          class="absolute inset-0 size-full rounded-2xl bg-gray-50 object-cover"
         >
-        <div class="absolute inset-0 rounded-2xl ring-1 ring-gray-900/10 ring-inset" />
+        <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
       </div>
       <div>
         <div class="flex items-center gap-x-4 text-xs">
@@ -25,16 +25,16 @@ const { data: blogPostList } = useAsyncData('blogPostList', () => {
             :datetime="blogPost.published"
             class="text-light-baseLight dark:text-dark-baseLight"
           >{{ blogPost.published }}</time>
-          <span class="relative z-10 rounded-full bg-gray-300 px-3 py-1.5 font-medium text-light-base hover:bg-gray-100">{{ blogPost.category }}</span>
+          <span class="text-light-base relative z-10 rounded-full bg-gray-300 px-3 py-1.5 font-medium hover:bg-gray-100">{{ blogPost.category }}</span>
         </div>
         <div class="group relative max-w-xl">
-          <h3 class="mt-3 text-lg font-semibold leading-6 text-light-base dark:text-dark-base group-hover:text-gray-600">
+          <h3 class="text-light-base dark:text-dark-base mt-3 text-lg font-semibold leading-6 group-hover:text-gray-600">
             <NuxtLink :to="blogPost._path">
               <span class="absolute inset-0" />
               {{ blogPost.title }}
             </NuxtLink>
           </h3>
-          <p class="mt-5 text-sm leading-6 text-light-baseLight dark:text-dark-baseLight">
+          <p class="text-light-baseLight dark:text-dark-baseLight mt-5 text-sm leading-6">
             {{ blogPost.description }}
           </p>
         </div>
@@ -42,7 +42,7 @@ const { data: blogPostList } = useAsyncData('blogPostList', () => {
           <div class="relative flex items-center gap-x-4">
             <!-- <img :src="blogPost.author.imageUrl" alt="" class="h-10 w-10 rounded-full bg-gray-50"> -->
             <div class="text-sm leading-6">
-              <p class="font-semibold text-light-base dark:text-dark-base">
+              <p class="text-light-base dark:text-dark-base font-semibold">
                 <!-- <a :href="blogPost.author.href"> -->
                 <span class="absolute inset-0" />
                 {{ blogPost.author }}

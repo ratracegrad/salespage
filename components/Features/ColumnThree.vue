@@ -5,17 +5,17 @@ import config from '~/config'
 <template>
   <SectionWrapper
     id="features"
-    class="bg-featureLightBackground dark:bg-featureDarkBackground text-featureLightText dark:text-featureDarkText"
+    class="bg-featureLightBackground text-featureLightText dark:bg-featureDarkBackground dark:text-featureDarkText"
   >
     <div class="text-center">
       <FeaturesTitle />
-      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-20">
+      <div class="mt-20 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         <div
           v-for="feature in config.features"
           :key="feature.id"
-          class="group rounded-lg bg-white text-featureLightText p-8 lg:p-10 h-full"
+          class="group h-full rounded-lg bg-white p-8 text-featureLightText lg:p-10"
         >
-          <div class="flex flex-col gap-x-10 gap-y-6 sm:gap-y-8 text-left">
+          <div class="flex flex-col gap-x-10 gap-y-6 text-left sm:gap-y-8">
             <Icon
               :name="feature.icon"
               size="60px"

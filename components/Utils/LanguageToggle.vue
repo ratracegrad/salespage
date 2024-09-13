@@ -18,7 +18,7 @@ type Locale = {
 </script>
 
 <template>
-  <div class="flex justify-center items-center flex-nowrap">
+  <div class="flex flex-nowrap items-center justify-center">
     <!-- <v-select v-model="selectedLanguage" :options="locales" :clearable="false">
       <template #selected-option="{ name, flag }">
         <Icon :name="flag" class="mr-2" />

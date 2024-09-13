@@ -1,14 +1,14 @@
 <template>
-  <div class="m-0 p-0 h-screen w-screen flex items-center justify-center mx-auto">
-    <div class="max-w-lg w-full mx-auto">
+  <div class="m-0 mx-auto flex h-screen w-screen items-center justify-center p-0">
+    <div class="mx-auto w-full max-w-lg">
       <div
-        class="bg-white w-full border border-gray-200 rounded-2xl p-4 sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700"
+        class="w-full rounded-2xl border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 sm:p-6 lg:p-8"
       >
         <form
           class="space-y-6"
           action="#"
         >
-          <h1 class="text-3xl font-semibold mb-6 text-center">
+          <h1 class="mb-6 text-center text-3xl font-semibold">
             {{ $t('register.title') }}
           </h1>
           <ButtonsRegisterSocial />

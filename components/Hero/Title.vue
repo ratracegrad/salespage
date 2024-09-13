@@ -5,7 +5,7 @@
   <h3 class="text-4xl font-bold sm:text-6xl">
     {{ $t('hero.subtitle') }}
   </h3>
-  <p class="mt-6 text-lg leading-8 max-w-xl">
+  <p class="mt-6 max-w-xl text-lg leading-8">
     {{ $t('hero.description') }}
   </p>
 </template>

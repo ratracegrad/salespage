@@ -12,14 +12,13 @@ definePageMeta({
 
 <template>
   <SectionWrapper id="blog">
-    <div class="flex flex-col border border-b border-gray-300 -mt-12 mr-0 mb-12 ml-0 relative">
-      <div class="title py-14 px-12 text-2xl font-semibold uppercase leading-7 tracking-wide">
+    <div class="relative mx-0 -mt-12 mb-12 flex flex-col border border-gray-300">
+      <div class="title px-12 py-14 text-2xl font-semibold uppercase leading-7 tracking-wide">
         {{ blogPost.title }}
       </div>
       <div>
         {{ blogPost.description }}
       </div>
-      
     </div>
     <pre><ContentDoc /></pre>
   </SectionWrapper>
