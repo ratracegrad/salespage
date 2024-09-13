@@ -3,7 +3,7 @@
     <button
       id="menu-button"
       type="button"
-      class="inline-flex w-full justify-center gap-x-1.5 rounded-md border-2 border-primary px-3 py-3.5 text-sm font-semibold text-slate-900 dark:text-white"
+      class="inline-flex w-full justify-center gap-x-1.5 rounded-md border-2 border-primary px-3 py-3.5 text-sm font-semibold text-slate-900 dark:border-secondary dark:text-white"
       aria-expanded="true"
       aria-haspopup="true"
       @click="toggle"

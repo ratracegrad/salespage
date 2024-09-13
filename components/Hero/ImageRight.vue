@@ -1,7 +1,7 @@
 <template>
   <div class="relative isolate pt-14">
     <svg
-      class="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+      class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
       aria-hidden="true"
     >
       <defs>
@@ -36,7 +36,7 @@
         fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)"
       />
     </svg>
-    <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 grid grid-cols-1 gap-4 lg:grid-cols-2 items-center">
+    <div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-4 px-6 py-24 sm:py-32 lg:grid-cols-2">
       <div class="mx-auto max-w-2xl lg:mx-0">
         <HeroTitle />
         <div class="mt-10 flex items-center gap-x-6">
@@ -47,7 +47,7 @@
         <NuxtImg
           src="/images/Hero8.png"
           alt="Hero Image"
-          class="mx-auto w-full h-auto drop-shadow-xl"
+          class="mx-auto h-auto w-full drop-shadow-xl"
           fit="cover"
         />
       </div>

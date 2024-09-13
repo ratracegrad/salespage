@@ -1,6 +1,6 @@
 <template>
-  <nav class="bg-navbarLightBackground dark:bg-navbarDarkBackground text-navbarLightText dark:text-navbarDarkText">
-    <div class="relative flex flex-wrap items-center justify-between px-8 py-3 mb-3 ">
+  <nav class="bg-navbarLightBackground text-navbarLightText dark:bg-navbarDarkBackground dark:text-navbarDarkText">
+    <div class="relative mb-3 flex flex-wrap items-center justify-between px-8 py-3 ">
       <div class="flex items-center gap-2">
         <ButtonsAppLogo />
         <ButtonsAppName />
@@ -8,10 +8,10 @@
       <div class="lg:hidden">
         <ButtonsNavbarOpen @toggle-navbar="toggleNavbar" />
       </div>
-      <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+      <ul class="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 transform lg:mx-auto lg:flex lg:w-auto lg:items-center lg:space-x-6">
         <ButtonsNavbarMenu />
       </ul>
-      <div class="hidden lg:flex items-center gap-3 lg:ml-auto">
+      <div class="hidden items-center gap-3 lg:ml-auto lg:flex">
         <UtilsDarkToggle v-if="config.navbar.showDarkToggle" />
         <UtilsLanguageToggle v-if="config.navbar.showLanguageToggle" />
         <ButtonsLogin />
@@ -23,8 +23,8 @@
     class="relative z-50 "
   >
     <div class="navbar-backdrop inset-0 bg-gray-800 opacity-25" />
-    <nav class="top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 border-r overflow-y-auto bg-navbarLightBackground dark:bg-navbarDarkBackground text-navbarLightText dark:text-navbarDarkText">
-      <div class="flex items-center justify-between mb-8">
+    <nav class="inset-y-0 left-0 flex w-5/6 max-w-sm flex-col overflow-y-auto border-r bg-navbarLightBackground p-6 text-navbarLightText dark:bg-navbarDarkBackground dark:text-navbarDarkText">
+      <div class="mb-8 flex items-center justify-between">
         <div class="flex items-center">
           <ButtonsAppLogo />
           <ButtonsAppName class="ml-3" />

@@ -1,7 +1,7 @@
 <template>
   <div class="flex h-screen text-lightText dark:text-darkText">
     <!-- Left Pane -->
-    <div class="hidden lg:flex items-center justify-center flex-1 bg-white">
+    <div class="hidden flex-1 items-center justify-center bg-white lg:flex">
       <div class="max-w-md text-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -258,15 +258,15 @@
       </div>
     </div>
     <!-- Right Pane -->
-    <div class="w-full bg-gray-100 lg:w-1/2 flex items-center justify-center">
-      <div class="max-w-md w-full p-6">
-        <h1 class="text-3xl font-semibold mb-6 text-center">
+    <div class="flex w-full items-center justify-center bg-gray-100 lg:w-1/2">
+      <div class="w-full max-w-md p-6">
+        <h1 class="mb-6 text-center text-3xl font-semibold">
           {{ $t('login.title') }}
         </h1>
         <div class="mt-4 flex flex-col items-center justify-between gap-2">
           <ButtonsLoginSocial />
         </div>
-        <div class="mt-4 text-sm text-center">
+        <div class="mt-4 text-center text-sm">
           <p>{{ $t('login.or') }}</p>
         </div>
         <form
@@ -285,7 +285,7 @@
               name="email"
               placeholder="Email address"
               autocomplete="email"
-              class="mt-1 p-2 w-full border rounded-md focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 transition-colors duration-300"
+              class="mt-1 w-full rounded-md border p-2 transition-colors duration-300 focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2"
             >
           </div>
           <div>
@@ -299,13 +299,13 @@
               name="password"
               placeholder="Password"
               autocomplete="current-password"
-              class="mt-1 p-2 w-full border rounded-md focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 transition-colors duration-300"
+              class="mt-1 w-full rounded-md border p-2 transition-colors duration-300 focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2"
             >
           </div>
           <div>
             <button
               type="submit"
-              class="w-full bg-black text-white p-2 rounded-md hover:bg-gray-800 focus:outline-none focus:bg-black focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 transition-colors duration-300"
+              class="w-full rounded-md bg-black p-2 text-white transition-colors duration-300 hover:bg-gray-800 focus:bg-black focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
             >
               {{ $t('login.submit') }}
             </button>

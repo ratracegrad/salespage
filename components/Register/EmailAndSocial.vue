@@ -1,14 +1,14 @@
 <template>
-  <div class="m-0 p-0 h-screen w-screen flex items-center justify-center mx-auto">
-    <div class="max-w-lg w-full mx-auto">
+  <div class="m-0 mx-auto flex h-screen w-screen items-center justify-center p-0">
+    <div class="mx-auto w-full max-w-lg">
       <div
-        class="bg-white w-full border border-gray-200 rounded-2xl p-4 sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700"
+        class="w-full rounded-2xl border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 sm:p-6 lg:p-8"
       >
-        <h1 class="text-3xl font-semibold mb-6 text-center">
+        <h1 class="mb-6 text-center text-3xl font-semibold">
           {{ $t('register.title') }}
         </h1>
         <ButtonsRegisterSocial />
-        <div class="mt-4 text-sm text-center">
+        <div class="mt-4 text-center text-sm">
           <p>{{ $t('register.or') }}</p>
         </div>
         <form
@@ -27,7 +27,7 @@
               name="email"
               placeholder="Email address"
               autocomplete="email"
-              class="mt-1 p-2 w-full border rounded-md focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 transition-colors duration-300"
+              class="mt-1 w-full rounded-md border p-2 transition-colors duration-300 focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2"
             >
           </div>
           <div>
@@ -41,13 +41,13 @@
               name="password"
               placeholder="Password"
               autocomplete="current-password"
-              class="mt-1 p-2 w-full border rounded-md focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 transition-colors duration-300"
+              class="mt-1 w-full rounded-md border p-2 transition-colors duration-300 focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2"
             >
           </div>
           <div>
             <button
               type="submit"
-              class="w-full bg-black text-white p-2 rounded-md hover:bg-gray-800 focus:outline-none focus:bg-black focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 transition-colors duration-300"
+              class="w-full rounded-md bg-black p-2 text-white transition-colors duration-300 hover:bg-gray-800 focus:bg-black focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
             >
               {{ $t('register.submit') }}
             </button>

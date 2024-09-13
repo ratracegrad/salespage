@@ -3,14 +3,13 @@ import config from '~/config'
 </script>
 
 <template>
-  <h2 class="tracking-light text-3xl font-bold text-light-base sm-text-4xl dark:text-dark-base">
+  <h2 class="tracking-light text-light-base sm-text-4xl dark:text-dark-base text-3xl font-bold">
     {{ config.blog.blogTitle }}
   </h2>
-  <p class="mt-2 text-lg leading-8 text-light-baseLight dark:text-dark-baseLight">
+  <p class="text-light-baseLight dark:text-dark-baseLight mt-2 text-lg leading-8">
     {{ config.blog.blogDescription }}
   </p>
 </template>
 
 <style>
 </style>
-

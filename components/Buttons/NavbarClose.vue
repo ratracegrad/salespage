@@ -1,6 +1,6 @@
 <template>
   <button
-    class="cursor-pointer text-2xl block lg:hidden focus:outline-none"
+    class="block cursor-pointer text-2xl focus:outline-none lg:hidden"
     type="button"
     @click="$emit('toggleNavbar')"
   >

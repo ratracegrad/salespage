@@ -6,7 +6,7 @@
     >
       <button
         type="button"
-        class="w-full flex justify-center items-center gap-2 bg-zinc-100 text-sm p-2 rounded-md hover:bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-200 transition-colors duration-300"
+        class="flex w-full items-center justify-center gap-2 rounded-md border border-gray-200 bg-zinc-100 p-2 text-sm transition-colors duration-300 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:ring-offset-2"
       >
         <Icon name="i-logos-google-icon" />
         {{ $t('register.google') }}
@@ -18,7 +18,7 @@
     >
       <button
         type="button"
-        class="w-full flex justify-center items-center gap-2 bg-zinc-100 text-sm p-2 rounded-md hover:bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-200 transition-colors duration-300"
+        class="flex w-full items-center justify-center gap-2 rounded-md border border-gray-200 bg-zinc-100 p-2 text-sm transition-colors duration-300 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:ring-offset-2"
       >
         <Icon name="i-logos-github-icon" />
         {{ $t('register.github') }}

@@ -5,7 +5,7 @@ import config from '~/config'
 <template>
   <SectionWrapper
     id="features"
-    class="bg-featureLightBackground dark:bg-featureDarkBackground text-featureLightText dark:text-featureDarkText"
+    class="bg-featureLightBackground text-featureLightText dark:bg-featureDarkBackground dark:text-featureDarkText"
   >
     <div class="lg:grid lg:grid-cols-12 lg:gap-8">
       <div class="lg:col-span-5">

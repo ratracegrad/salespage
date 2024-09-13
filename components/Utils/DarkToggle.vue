@@ -3,7 +3,7 @@
     <button
       v-if="isDark"
       type="button"
-      class="flex items-center justify-center border-2 border-primary dark:border-secondary rounded-md px-2 py-2"
+      class="flex items-center justify-center rounded-xl border-2 border-primary p-2 dark:border-secondary"
       aria-label="light mode button"
       @click="toggleAppearance"
     >
@@ -15,7 +15,7 @@
     <button
       v-else
       type="button"
-      class="flex items-center justify-center border-2 border-primary dark:border-secondary rounded-md px-2 py-2"
+      class="flex items-center justify-center rounded-xl border-2 border-primary p-2 dark:border-secondary"
       aria-label="dark mode button"
       @click="toggleAppearance"
     >
