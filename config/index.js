@@ -36,6 +36,12 @@ export default {
         url: '/contact',
         i18n: 'navbar.contact',
       },
+      {
+        id: 4,
+        name: 'Blog',
+        url: '/blog',
+        i18n: 'navbar.blog',
+      },
     ],
   },
   hero: {
