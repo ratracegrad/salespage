@@ -1,15 +1,15 @@
 {
   "languages": {
-    "english": "English",
-    "german": "German",
-    "japanese": "Japanese"
+    "english": "Englisch",
+    "german": "Deutsch",
+    "japanese": "Japanisch"
   },
   "app": {
     "name": "The Bland SaaS",
-    "description": "My App Description"
+    "description": "Die beste SaaS-Vorlage der Welt"
   },
   "banner": {
-    "message": "The Bland SaaS is now available. Get started today!"
+    "message": "Das Bland SaaS ist jetzt verfügbar. Legen Sie noch heute los!"
   },
   "empty": {
     "title": "Seite nicht gefunden",
@@ -18,12 +18,12 @@
     "back": "Zurück zur Startseite"
   },
   "navbar": {
-    "home": "Home",
-    "about": "About",
-    "contact": "Contact",
+    "home": "Startseite",
+    "about": "Über uns",
+    "contact": "Kontakt",
     "blog": "Blog",
-    "login": "Login",
-    "register": "Register"
+    "login": "Anmelden",
+    "register": "Registrieren"
   },
   "hero": {
     "title": "Nuxt 3 + Tailwind",
@@ -33,94 +33,82 @@
     "cta2": "Erfahren Sie mehr"
   },
   "login": {
-    "title": "Login",
-    "email": "Email Address",
-    "password": "Password",
-    "submit": "Login",
-    "forgot": "Forgot Password?",
-    "or": "or with email",
-    "notRegistered": "Not registered yet?",
-    "register": "Register",
-    "createAccount": "Create an account",
-    "google": "Login with Google",
-    "github": "Login with Github",
-    "home": "Return to Home"
+    "title": "Anmelden",
+    "email": "E-Mail-Adresse",
+    "password": "Passwort",
+    "submit": "Absenden",
+    "forgot": " Passwort vergessen?",
+    "or": "Oder mit E-Mail",
+    "notRegistered": "Noch nicht registriert?",
+    "register": "Registrieren",
+    "createAccount": "Konto erstellen",
+    "google": "Mit Google anmelden",
+    "github": "Mit GitHub anmelden",
+    "home": "Zurück zur Startseite"
   },
   "register": {
-    "title": "Register",
-    "email": "Email Address",
-    "password": "Password",
-    "submit": "Register",
-    "or": "or with email",
-    "haveAccount": "Already have an account?",
-    "login": "Login Here",
-    "google": "Register with Google",
-    "github": "Register with Github",
-    "home": "Return to Home"
+    "title": "Registrieren",
+    "email": "E-Mail-Adresse",
+    "password": "Passwort",
+    "submit": "Absenden",
+    "or": "Oder mit E-Mail",
+    "haveAccount": "Bereits ein Konto?",
+    "login": "Hier anmelden",
+    "google": "Mit Google anmelden",
+    "github": "Mit GitHub anmelden",
+    "home": "Zurück zur Startseite"
   },
   "header": {
-    "title": "Nuxt 3 + Tailwind SaaS Template",
-    "subtitle": "A minimalistic template for building SaaS applications using Nuxt 3, Tailwind, and others"
-  },
-  "home": {
-    "photo-credit": "Photo by",
-    "counter": {
-      "name": "Counter",
-      "double": "Double the count",
-      "increment": "Increment"
-    },
-    "throw-error": "Throw error"
+    "title": "NNuxt 3 + Tailwind SaaS-Vorlage",
+    "subtitle": "Eine minimalistische Vorlage zum Erstellen von SaaS-Anwendungen mit Nuxt 3, Tailwind und anderens"
   },
   "pricing": {
-    "title": "Pricing Plans for Everyone",
-    "subtitle": "Choose the plan that works best for you",
-    "featured": "Most Popular",
-    "included": "What's included",
+    "title": "Preisstaffelungen für jeden",
+    "subtitle": "Wählen Sie den Plan, der am besten zu Ihnen passt",
+    "featured": "Am beliebtesten",
+    "included": "Was enthalten ist",
     "previously": "Previously",
     "plans": [
       {
-        "name": "Beginner",
-        "description": "For individuals",
-        "feature1": "Feature 1",
-        "feature2": "Feature 2",
-        "feature3": "Feature 3",
-        "feature4": "Feature 4",
-        "buttonText": "Get Started"
+        "name": "Anfänger",
+        "description": "Für Einzelpersonen",
+        "feature1": "Funktion 1",
+        "feature2": "Funktion 2",
+        "feature3": "Funktion 3",
+        "feature4": "Funktion 4",
+        "buttonText": "Loslegen"
       },
       {
-        "name": "Intermediate",
+        "name": "Dazwischenliegend",
         "description": "For small teams",
-        "feature1": "Feature 1",
-        "feature2": "Feature 2",
-        "feature3": "Feature 3",
-        "feature4": "Feature 4",
-        "buttonText": "Get Started"
+        "feature1": "Funktion 1",
+        "feature2": "Funktion 2",
+        "feature3": "Funktion 3",
+        "feature4": "Funktion 4",
+        "buttonText": "Loslegen"
       },
       {
-        "name": "Advanced",
+        "name": "fortschrittlich",
         "description": "For large teams",
-        "feature1": "Feature 1",
-        "feature2": "Feature 2",
-        "feature3": "Feature 3",
-        "feature4": "Feature 4",
-        "buttonText": "Get Started"
+        "feature1": "Funktion 1",
+        "feature2": "Funktion 2",
+        "feature3": "Funktion 3",
+        "feature4": "Funktion 4",
+        "buttonText": "Loslegen"
       }
     ]
   },
-  "about": {
-    "readme": "See Github readme file"
-  },
   "errors": {
-    "404": "This page could not be found",
-    "other": "An error occurred",
-    "description": "Looks like you've followed a broken link or entered a URL that doesn't exist on this site.",
-    "go-back": "Go Back",
-    "try-again": "Try Again"
+    "404": "Diese Seite konnte nicht gefunden werden",
+    "other": "Ein Fehler ist aufgetreten",
+    "description": "Offenbar sind Sie einem defekten Link gefolgt oder haben eine URL eingegeben, die auf dieser Site nicht existiert.",
+    "go-back": "Geh zurück",
+    "try-again": "Versuchen Sie es erneut"
   },
   "testimonials": {
-    "title": "Happy Customers",
-    "subtitle": "Don't take our word for it. See what customers are saying about us.",
-    "headComment": "1234 copies sold",
+    "title": "Zufriedene Kunden",
+    "subtitle": "Verlassen Sie sich nicht nur auf unser Wort. Sehen Sie, was Kunden über uns sagen.",
+    "headComment": "1234 Exemplare verkauft",
     "entry1": "Commodo amet fugiat excepteur sunt qui ea elit cupidatat ullamco consectetur ipsum elit consequat. Elit sunt proident ea nulla ad nulla dolore ad pariatur tempor non. Sint veniam minim et ea.",
     "entry2": "Commodo amet fugiat excepteur sunt qui ea elit cupidatat ullamco consectetur ipsum elit consequat. Elit sunt proident ea nulla ad nulla dolore ad pariatur tempor non. Sint veniam minim et ea.",
     "entry3": "Commodo amet fugiat excepteur sunt qui ea elit cupidatat ullamco consectetur ipsum elit consequat. Elit sunt proident ea nulla ad nulla dolore ad pariatur tempor non. Sint veniam minim et ea.",
@@ -130,52 +118,52 @@
     "entry7": "Commodo amet fugiat excepteur sunt qui ea elit cupidatat ullamco consectetur ipsum elit consequat. Elit sunt proident ea nulla ad nulla dolore ad pariatur tempor non. Sint veniam minim et ea."
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Do you have any questions? We have the answers!",
-    "question1": "What is the app about?",
-    "answer1": "This app is about... Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum erat eget quam ornare tempor. Vestibulum ex risus, egestas at augue lobortis, commodo euismod turpis. Ut vitae viverra nulla. Duis vel aliquet erat, eu tempus mi. Morbi consequat consectetur ex id volutpat. Integer ante nunc, blandit nec neque eu, posuere tempus eros.",
-    "question2": "How do I use the app?",
-    "answer2": "To use the app... Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum erat eget quam ornare tempor. Vestibulum ex risus, egestas at augue lobortis, commodo euismod turpis. Ut vitae viverra nulla. Duis vel aliquet erat, eu tempus mi. Morbi consequat consectetur ex id volutpat. Integer ante nunc, blandit nec neque eu, posuere tempus eros.",
-    "question3": "How do I get started?",
-    "answer3": "To get started... Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum erat eget quam ornare tempor. Vestibulum ex risus, egestas at augue lobortis, commodo euismod turpis. Ut vitae viverra nulla. Duis vel aliquet erat, eu tempus mi. Morbi consequat consectetur ex id volutpat. Integer ante nunc, blandit nec neque eu, posuere tempus eros.",
-    "question4": "How do I contact support?",
-    "answer4": "To contact support... Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum erat eget quam ornare tempor. Vestibulum ex risus, egestas at augue lobortis, commodo euismod turpis. Ut vitae viverra nulla. Duis vel aliquet erat, eu tempus mi. Morbi consequat consectetur ex id volutpat. Integer ante nunc, blandit nec neque eu, posuere tempus eros.",
-    "question5": "What is the answer to the universe?",
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Sie haben Fragen? Wir haben die Antworten!",
+    "question1": "Worum geht es in der App?",
+    "answer1": "In dieser App geht es um ...Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum erat eget quam ornare tempor. Vestibulum ex risus, egestas at augue lobortis, commodo euismod turpis. Ut vitae viverra nulla. Duis vel aliquet erat, eu tempus mi. Morbi consequat consectetur ex id volutpat. Integer ante nunc, blandit nec neque eu, posuere tempus eros.",
+    "question2": "Wie verwende ich die App?",
+    "answer2": "So verwenden Sie die App ... Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum erat eget quam ornare tempor. Vestibulum ex risus, egestas at augue lobortis, commodo euismod turpis. Ut vitae viverra nulla. Duis vel aliquet erat, eu tempus mi. Morbi consequat consectetur ex id volutpat. Integer ante nunc, blandit nec neque eu, posuere tempus eros.",
+    "question3": "Wie fange ich an?",
+    "answer3": "Um zu beginnen... Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum erat eget quam ornare tempor. Vestibulum ex risus, egestas at augue lobortis, commodo euismod turpis. Ut vitae viverra nulla. Duis vel aliquet erat, eu tempus mi. Morbi consequat consectetur ex id volutpat. Integer ante nunc, blandit nec neque eu, posuere tempus eros.",
+    "question4": "Wie kontaktiere ich den Support?",
+    "answer4": "So kontaktieren Sie den Support ... Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum erat eget quam ornare tempor. Vestibulum ex risus, egestas at augue lobortis, commodo euismod turpis. Ut vitae viverra nulla. Duis vel aliquet erat, eu tempus mi. Morbi consequat consectetur ex id volutpat. Integer ante nunc, blandit nec neque eu, posuere tempus eros.",
+    "question5": "Was ist die Antwort auf das Universum?",
     "answer5": "42"
   },
   "features": {
-    "title": "Features",
-    "subtitle": "Our app has all the features you need to get started",
-    "bylineTitle": "We tackle the challenges start-ups face",
+    "title": "Merkmale",
+    "subtitle": "Unsere App bietet alle Funktionen, die Sie für den Einstieg benötigen",
+    "bylineTitle": "Wir stellen uns den Herausforderungen, vor denen Startups stehen",
     "bylineDescription": "Donec ac tortor a tellus varius lacinia. In consectetur ex ut lacinia tristique. Quisque scelerisque tortor posuere erat consectetur egestas. Morbi auctor auctor leo. Aliquam nec lectus nec turpis aliquam ornare non non eros. Integer neque velit, maximus a blandit eget, scelerisque ac eros. Aenean et mauris nec libero vestibulum viverra sit amet ac ligula.",
-    "title1": "Branding & Digital Strategies",
-    "description1": "Brand strategy is all about developing a unique identity that distinguishes your business from",
-    "title2": "Web Design & App Development",
-    "description2": "Web design & development is an umbrella term that describes the process of creating a website",
-    "title3": "Results-Driven Digital Marketing",
-    "description3": "Digital marketing potential customers using the internet & other forms of digital communication",
-    "title4": "Custom Software Development",
-    "description4": "Custom Software Development is the process of conceptualizing, designing, building & deploying"
+    "title1": "Branding und digitale Strategien",
+    "description1": "Bei der Markenstrategie geht es darum, eine einzigartige Identität zu entwickeln, die Ihr Unternehmen von anderen Unternehmen unterscheidet.",
+    "title2": "Webdesign und App-Entwicklung",
+    "description2": "Webdesign und -entwicklung ist ein Überbegriff, der den Prozess der Erstellung einer Website beschreibt",
+    "title3": "Ergebnisorientiertes digitales Marketing",
+    "description3": "Digitales Marketing für potenzielle Kunden über das Internet und andere Formen der digitalen Kommunikation",
+    "title4": "Kundenspezifische Softwareentwicklung",
+    "description4": "Kundenspezifische Softwareentwicklung ist der Prozess der Konzeption, des Entwurfs, der Erstellung und Bereitstellung"
   },
   "stats": {
-    "title1": "Accuracy Rate",
-    "description1": "in fulfilling orders",
-    "title2": "Projects Completed",
-    "description2": "in the last year",
-    "title3": "Happy Customers",
-    "description3": "this year alone"
+    "title1": "Genauigkeitsrate",
+    "description1": "bei der Auftragserfüllung",
+    "title2": "Abgeschlossene Projekte",
+    "description2": "im letzten Jahr",
+    "title3": "Zufriedene Kunden",
+    "description3": "allein dieses Jahr"
   },
   "asSeenOn": {
-    "title": "Trusted by 9,000+ users and major corporations like"
+    "title": "Mehr als 9.000 Benutzer und große Unternehmen vertrauen uns"
   },
   "footer": {
-    "copyright": "All rights reserved.",
-    "links": "Quick Links",
-    "links1": "Features",
-    "links2": "Pricing",
+    "copyright": "Alle Rechte vorbehalten.",
+    "links": "Direktlinks",
+    "links1": "Merkmale",
+    "links2": "Preise",
     "links3": "Blog",
-    "legal": "Legal",
-    "legal1": "Terms of Service",
-    "legal2": "Privacy Policy"
+    "legal": "Rechtliches",
+    "legal1": "Servicebedingungen",
+    "legal2": "Datenschutzrichtlinie"
   }
 }
