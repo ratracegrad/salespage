@@ -1,4 +1,28 @@
 export default {
+  navbar: {
+    menu: [
+      {
+        id: 1,
+        name: 'Home',
+        url: '/',
+      },
+      {
+        id: 2,
+        name: 'Docs',
+        url: '/docs',
+      },
+      {
+        id: 3,
+        name: 'Pricing',
+        url: '/pricing',
+      },
+      {
+        id: 4,
+        name: 'Demo',
+        url: '/demo',
+      },
+    ],
+  },
   faqs: [
     {
       id: 1,

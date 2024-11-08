@@ -3,7 +3,7 @@
     class="inline-block whitespace-nowrap text-xl font-bold leading-relaxed text-logoLight dark:text-logoDark"
     to="/"
   >
-    {{ $t(`${config.appName}`) }}
+    The Bland SaaS
   </NuxtLink>
 </template>
 

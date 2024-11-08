@@ -56,8 +56,6 @@ export default defineNuxtConfig({
   googleFonts: {
     display: 'swap',
     families: {
-      'Merriweather': true,
-      'JetBrains Mono': true,
       'Inter': true,
     },
     subsets: 'latin-ext',
@@ -108,9 +106,6 @@ export default defineNuxtConfig({
   ],
 
   runtimeConfig: {
-    // runtimeConfig has 2 keys: public and server
-    // public will be available on client side
-    // server will be available on server side
     stripeSecret: '',
     stripeWebhookSecret: '',
     public: {
@@ -121,4 +116,14 @@ export default defineNuxtConfig({
   supabase: {
     redirect: false,
   },
+
+  tailwindcss: {
+    cssPath: ['~/assets/css/tailwind.css', { injectPosition: 'first' }],
+    configPath: 'tailwind.config',
+    exposeConfig: {
+      level: 2
+    },
+    config: {},
+    viewer: true,
+  }
 })

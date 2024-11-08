@@ -7,5 +7,10 @@ export default withNuxt(
     rules: {
       'tailwindcss/migration-from-tailwind-2': 'off',
     },
+    settings: {
+        tailwindcss: {
+            config: path.join(__dirname, "./tailwind.config.js"),
+        },
+    },
   },
 )

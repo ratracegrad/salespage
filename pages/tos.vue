@@ -3,67 +3,123 @@
 </script>
 
 <template>
-  <section>
-    <div class="mx-auto max-w-5xl">
-      <!--
-  Here are five resources you can use to create the terms of service for your SaaS website.
-  These websites offer a free and a paid version of their terms of service generator. I
-  recommend you use the free version to create a terms of service for your SaaS website.
-  If you need a more detailed terms of service, you can use the paid version to create a
-  terms of service for your SaaS website.
+  <SectionWrapper
+    id="tos"
+    class="bg-darkBackground leading-loose text-darkText"
+  >
+    <div class="mx-auto max-w-3xl">
+      <nuxt-link to="/">
+        <button class="mb-7 rounded-md bg-purple-700 px-5 py-2.5 text-zinc-100">
+          ← Return Home
+        </button>
+      </nuxt-link>
 
-  1. Use the Terms of Service Generator at https://www.termsfeed.com/terms-service-generator/
-  2. Use the Terms of Service Generator at https://www.shopify.com/tools/policy-generator/terms-and-conditions
-  3. Use the Terms of Service Generator at https://www.freeprivacypolicy.com/free-terms-of-service-generator.php
-  4. Use the Terms of Service Generator at https://www.termsandconditionsgenerator.com/
+      <h3 class="mb-3 mt-6 text-xl font-semibold">
+        Terms of Service
+      </h3>
+      <p class="mb-6">
+        <em>Last Updated: September 21, 2024</em>
+      </p>
 
-  Once you have created a terms of service policy using one of the above options you can
-  copy/paste the HTML version of the terms of service policy into the <pre> tag below.
-  If you want, you can style the terms of service policy using CSS.
+      <p class="mb-3">These Terms of Service govern your use of The Bland SaaS and any related products and services provided by The Bland SaaS. By accessing and using our website, you agree to comply with these Terms of Service and any applicable laws. If you do not agree with these terms, you are prohibited from using our website or any services we provide.</p>
 
-  5. Use ChatGPT to generate a terms of service policy at https://chat.openai.com/
+      <p class="mb-3">We reserve the right to modify or update these Terms of Service at any time. Any changes will take effect immediately upon publication, and we encourage you to review this page regularly.</p>
 
-  As I am not a lawyer, you should consider using one of the free plans listed above before
-  considering using chatGPT. You must have a ChatGPT account.
+      <h3 class="mb-3 mt-6 text-xl font-semibold">
+        Permissible Use of Our Services
+      </h3>
 
-  Here is a potential chatGPT prompt to generate a terms of service policy.
+      <p class="mb-6">
+        When accessing and using our website, you agree on behalf of yourself, your team, and any affiliates, that you will refrain from engaging in the following activities:
+      </p>
 
-  1. Replace with your own data in areas indicated by <PUT YOUR DATA HERE>
-  2. Modify the prompt as needed
-  3. Go to https://chat.openai.com/
-  4. Copy and paste the prompt below into chatGPT
-  5. Paste the answer from ChatGPT directly in the <pre> tag below
+      <ul class="mb-4 list-disc">
+        <li class="ml-6">
+          Altering, duplicating, creating adaptations of, disassembling, or reverse-engineering any of the content, code, or software available through this website.
+        </li>
+        <li class="ml-6">
+          Removing, obscuring, or altering any intellectual property notices, including copyright and trademark information, that appear on the website or in the software.
+        </li>
+        <li class="ml-6">
+          Sharing, transferring, or replicating any website materials onto external platforms or servers without our explicit consent.
+        </li>
+        <li class="ml-6">
+          Engaging in any actions that intentionally or unintentionally interfere with the functionality, security, or performance of our network or associated services.
+        </li>
+        <li class="ml-6">
+          Using the website or its features to distribute harmful, offensive, unlawful, or fraudulent content or communications.
+        </li>
+        <li class="ml-6">
+          Violating any local, national, or international laws or regulations in relation to your use of our services.
+        </li>
+        <li class="ml-6">
+          Initiating unsolicited marketing, spam messages, or unauthorized advertisements using the site’s features.
+        </li>
+        <li class="ml-6">
+          Collecting or mining user data without their explicit permission.
+        </li>
+        <li class="ml-6">
+          Using the platform in any manner that infringes upon the privacy rights, intellectual property rights, or any other rights of individuals or third parties.
+        </li>
+      </ul>
 
-  -- ChatGPT Prompt  to copy below --
+      <h3 class="mb-3 mt-6 text-xl font-semibold">
+        License for Use
+      </h3>
+      <p>You are granted a limited, non-exclusive, and non-transferable license to access and use our materials for personal, non-commercial purposes. This license does not transfer ownership of the materials to you, and may be terminated by The Bland SaaS at any time for any breach of these Terms of Service.</p>
 
-  You are an excellent Legal Advisor. Your role is to provide legal guidance, ensure compliance
-  with laws and regulations, and manage legal risks. Utilize your expertise in legal matters to
-  support and protect the interests of my SaaS website.
+      <h3 class="mb-3 mt-6 text-xl font-semibold">
+        Pricing and Refunds
+      </h3>
+      <p>Our products and services are priced as listed at the time of purchase. We reserve the right to adjust our pricing at any time. Due to the digital nature of our products, all sales are final, and refunds are not permitted once access has been granted, except where required by law.</p>
 
-  I need your help to write a simple terms of service for my SaaS website.
-  Here is some context for you to use in writing this terms of service policy.
-  - Website: <PUT YOUR WEBSITE URL HERE>
-  - Name: <PUT YOUR COMPANY NAME OR YOUR NAME HERE>
-  - Description: <PUT YOUR WEBSITE DESCRIPTION HERE>
-  - Ownership: <PUT YOUR OWNERSHIP POLICY HERE>
-  - User data collected: name, email and payment information
-  - Non-personal data collection: web cookies
-  - Link to privacy-policy: <PUT YOUR WEBSITE URL HERE FOLLOWED BY /privacy i.e. https://www.google.com/privacy>
-  - Governing Law: <PUT YOUR COUNTRY AND OR STATE HERE>
-  - Updates to the Terms: users will be updated by email
-  - Contact information: <PUT YOUR CONTACT EMAIL ADDRESS HERE>
+      <h3 class="mb-3 mt-6 text-xl font-semibold">
+        Limitations of Liability
+      </h3>
+      <p class="mb-3">
+        Our website and the materials provided are available on an “as-is” basis. We make no warranties, either expressed or implied, regarding the accuracy, completeness, or reliability of the information. The Bland SaaS will not be liable for any consequential or indirect damages, including but not limited to, loss of profits, business interruption, or data corruption.
+      </p>
 
-  Please write a simple Terms & Services for my SaaS website.
-  Add the current date.
-  Do not add or explain your reasoning.
-  Answer:
+      <p class="mb-3">
+        In the event we are found liable for any damages related to your use of the website, our liability will be limited to the amount you paid for the service.
+      </p>
 
--->
-      <pre>
-        <!-- Paste your terms of service policy here -->
-      </pre>
+      <h3 class="mb-3 mt-6 text-xl font-semibold">
+        User-Generated Content
+      </h3>
+      <p class="mb-3">
+        We are not responsible for any user-generated content posted on our website. By posting content, you confirm that you own the rights to it and that it does not violate any laws or the rights of others.
+      </p>
+
+      <h3 class="mb-3 mt-6 text-xl font-semibold">
+        Intellectual Property
+      </h3>
+      <p class="mb-3">
+        All materials and content on our website, including but not limited to text, images, and software, are protected by copyright laws and remain the property of [Your Company Name] or its licensors. You may not reproduce, distribute, or create derivative works from our materials without prior written consent.
+      </p>
+
+      <h3 class="mb-3 mt-6 text-xl font-semibold">
+        Right to Terminate
+      </h3>
+      <p class="mb-3">
+        We may suspend or terminate your access to our website and services at any time without prior notice if you breach these Terms of Service.
+      </p>
+
+      <h3 class="mb-3 mt-6 text-xl font-semibold">
+        Governing Law
+      </h3>
+      <p class="mb-3">
+        These Terms of Service are governed by and construed in accordance with the laws of Georgia, United States. By using our website, you submit to the exclusive jurisdiction of the courts located in Georgia, United States.
+      </p>
+
+      <h3 class="mb-3 mt-6 text-xl font-semibold">
+        Severability
+      </h3>
+      <p class="mb-3">
+        If any provision of these Terms of Service is deemed invalid or unenforceable, the remaining provisions will remain in full force and effect.
+      </p>
     </div>
-  </section>
+  </SectionWrapper>
 </template>
 
 <style scoped>

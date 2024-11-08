@@ -5,12 +5,12 @@ import config from '~/config'
 <template>
   <SectionWrapper id="pricing">
     <div class="mb-20 flex w-full flex-col text-center">
-			<h2 class="text-4xl font-bold sm:text-6xl">
-				Pricing
-			</h2>
-			<h3 class="text-xl font-semibold sm:text-lg">
-				Choose the plan that works best for you
-			</h3>
+      <h2 class="text-4xl font-bold sm:text-6xl">
+        Pricing
+      </h2>
+      <h3 class="text-xl font-semibold sm:text-lg">
+        Choose the plan that works best for you
+      </h3>
     </div>
 
     <div class="relative flex flex-col items-center justify-center gap-8 lg:flex-row lg:items-stretch">
@@ -21,7 +21,7 @@ import config from '~/config'
       >
         <div
           v-if="plan.isFeatured"
-          class="absolute left-1/2 top-0 z-20 -translate-x-1/2 -translate-y-1/2 bg-purple-900 rounded-full px-3 py-2"
+          class="absolute left-1/2 top-0 z-20 -translate-x-1/2 -translate-y-1/2 rounded-full bg-purple-900 px-3 py-2"
         >
           <span
             class="text-xs font-semibold"
@@ -93,9 +93,11 @@ import config from '~/config'
           </ul>
 
           <div class="space-y-2">
-						<button class="w-full rounded-full bg-hibiscus px-7 py-5 text-center text-xl font-bold">
-							{{ plan.buttonText }}
-						</button>
+            <nuxt-link to="https://theblandsaas.lemonsqueezy.com/affiliates">
+              <button class="w-full rounded-full bg-hibiscus px-7 py-5 text-center text-xl font-bold">
+              {{ plan.buttonText }}
+            </button>
+            </nuxt-link>
           </div>
         </div>
       </div>

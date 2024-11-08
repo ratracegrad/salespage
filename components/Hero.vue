@@ -42,15 +42,15 @@
 						The Bland SaaS
 					</h2>
 					<h3 class="text-2xl lg:text-4xl  font-semibold my-8">
-						Nextjs or Nuxtjs <br />Supabase, Tailwind and Prisma
+						The SaaS Starter Kit<br />You Always Wanted
 					</h3>
 					<p class="mt-6 text-lg lg:text-xl text-slate-200">
-						Launch Faster Than You Can Say "MVP"
+						Build Your SaaS in Minutes
 					</p>
         <div class="mt-10 flex items-center justify-center lg:justify-start">
-          <button class="bg-purple-700 h-10 px-4 rounded-full">
+          <!-- <button class="bg-purple-700 h-10 px-4 rounded-full">
 						Get The Bland SaaS
-					</button>
+					</button> -->
         </div>
       </div>
       <div class="mt-16 sm:mt-24 lg:mt-0 ">
@@ -71,9 +71,9 @@
 
 <style scoped>
 .hero-title {
-	background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
-	background-clip: text;
-	    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>
