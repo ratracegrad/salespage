@@ -5,7 +5,7 @@ features:
     - title: 'Nuxt 3'
       description: 'The Intuitive Vue Framework'
       icon: 'i-simple-icons-nuxtdotjs'
-      to: '/docs/nuxtjs/getting-started'
+      to: '/docs/nuxtjs/introduction'
       target: '_self'
     - title: 'Nextjs with App Router'
       description: 'Modern full-stack React framework using Nextjs with App Router'
