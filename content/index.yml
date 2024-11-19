@@ -1,0 +1,20 @@
+navigation: false
+features:
+  title: 'Select Your SaaS Template'
+  items:
+    - title: 'Nuxt 3'
+      description: 'The Intuitive Vue Framework'
+      icon: 'i-simple-icons-nuxtdotjs'
+      to: '/docs/nuxtjs/getting-started'
+      target: '_self'
+    - title: 'Nextjs with App Router'
+      description: 'Modern full-stack React framework using Nextjs with App Router'
+      icon: 'i-simple-icons-nextdotjs'
+      to: '/docs/nextjs-app-router/getting-started'
+      target: '_self'
+    - title: 'Nextjs with Pages Router'
+      description: 'Traditional Nextjs architecture using the stable Pages Router'
+      icon: 'i-simple-icons-nextdotjs'
+      to: '/docs/nextjs-pages-router/getting-started'
+      target: '_self'
+    

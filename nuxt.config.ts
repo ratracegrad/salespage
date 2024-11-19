@@ -30,15 +30,17 @@ export default defineNuxtConfig({
 
   colorMode: {
     classSuffix: '',
+    disableTransition: true
   },
 
   compatibilityDate: '2024-07-27',
 
-  content: {
-    highlight: {
-      theme: 'github-light',
-    },
-  },
+  // content: {
+  //   documentDriven: true,
+  //   highlight: {
+  //     theme: 'light-plus',
+  //   },
+  // },
 
   css: [
     '~/assets/css/styles.css',
@@ -53,69 +55,48 @@ export default defineNuxtConfig({
     },
   },
 
-  googleFonts: {
-    display: 'swap',
-    families: {
-      'Inter': true,
-    },
-    subsets: 'latin-ext',
-  },
+  extends: ['@nuxt/ui-pro'],
 
-  i18n: {
-    strategy: 'no_prefix',
-    locales: [
-      {
-        code: 'ENG',
-        file: 'en.json',
-        name: 'English',
-        flag: 'i-flag-us-4x3',
-      },
-      {
-        code: 'DEU',
-        file: 'de.json',
-        name: 'Deutsch',
-        flag: 'i-flag-de-4x3',
-      },
-      {
-        code: 'JPN',
-        file: 'ja.json',
-        name: '日本語',
-        flag: 'i-flag-jp-4x3',
-      },
-    ],
-    lazy: true,
-    langDir: 'lang',
-    defaultLocale: 'ENG',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-    },
+  future: {
+    compatibilityVersion: 4
+  },
+  
+  hooks: {
+    // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
+    'components:extend': (components) => {
+      const globals = components.filter(c => ['UButton', 'UIcon'].includes(c.pascalName))
+
+      globals.forEach(c => c.global = true)
+    }
   },
 
   modules: [
-    '@nuxtjs/color-mode',
-    '@nuxtjs/i18n',
-    '@nuxtjs/google-fonts',
-    '@nuxtjs/supabase',
-    '@nuxtjs/tailwindcss',
-    '@pinia/nuxt',
     '@nuxt/content',
-    '@nuxt/image',
     '@nuxt/eslint',
-    '@nuxt/icon',
+    '@nuxt/fonts',
+    '@nuxt/ui',
+    '@nuxthq/studio',
+    'nuxt-og-image',
+    '@nuxt/image'
   ],
 
-  runtimeConfig: {
-    stripeSecret: '',
-    stripeWebhookSecret: '',
-    public: {
-      stripeKey: process.env.STRIPE_SECRET,
-    },
+  nitro: {
+    prerender: {
+      routes: [
+        '/'
+      ],
+      crawlLinks: true
+    }
   },
 
-  supabase: {
-    redirect: false,
+  routeRules: {
+    '/api/search.json': { prerender: true }
   },
+
+  site: { 
+    url: 'https://theblandsaas.com', 
+    name: 'The SaaS Template you always wanted', 
+  }, 
 
   tailwindcss: {
     cssPath: ['~/assets/css/tailwind.css', { injectPosition: 'first' }],
