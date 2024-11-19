@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Analytics />
     <NuxtLoadingIndicator />
 
     <UMain>
@@ -22,6 +23,7 @@
 
 <script setup lang="ts">
 import type { ParsedContent } from '@nuxt/content'
+import { Analytics } from '@vercel/analytics/nuxt'
 
 const { seo } = useAppConfig()
 
