@@ -1,2 +1,4 @@
 title: Database
 icon: i-mdi-database
+iconColor: bg-purple-500
+collapsed: true

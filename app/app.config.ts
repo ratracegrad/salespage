@@ -33,21 +33,21 @@ export default defineAppConfig({
   },
   toc: {
     title: 'Table of Contents',
-    bottom: {
-      title: 'Community',
-      edit: 'https://github.com/nuxt-ui-pro/docs/edit/main/content',
-      links: [{
-        icon: 'i-heroicons-star',
-        label: 'Star on GitHub',
-        to: 'https://github.com/nuxt/ui',
-        target: '_blank'
-      }, {
-        icon: 'i-heroicons-book-open',
-        label: 'Nuxt UI Pro docs',
-        to: 'https://ui.nuxt.com/pro/guide',
-        target: '_blank'
-      }, 
-    ]
-    }
+    // bottom: {
+    //   title: 'Community',
+    //   edit: 'https://github.com/nuxt-ui-pro/docs/edit/main/content',
+    //   links: [{
+    //     icon: 'i-heroicons-star',
+    //     label: 'Star on GitHub',
+    //     to: 'https://github.com/nuxt/ui',
+    //     target: '_blank'
+    //   }, {
+    //     icon: 'i-heroicons-book-open',
+    //     label: 'Nuxt UI Pro docs',
+    //     to: 'https://ui.nuxt.com/pro/guide',
+    //     target: '_blank'
+    //   }, 
+    // ]
+    // }
   }
 })
