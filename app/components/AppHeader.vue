@@ -5,7 +5,6 @@ const navigation = inject<NavItem[]>('navigation', [])
 
 const { header } = useAppConfig()
 const route = useRoute()
-console.log('route', route.value)
 </script>
 
 <template>

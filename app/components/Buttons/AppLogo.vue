@@ -1,6 +1,6 @@
 <template>
   <Icon
-    name="mdi:rocket-launch"
+    name="i-mdi-rocket-launch"
     size="30px"
     class="text-logoLight dark:text-logoDark"
   />

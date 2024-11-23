@@ -17,7 +17,7 @@ export default defineNuxtSchema({
               title: 'Search Bar',
               description: 'Icon to display in the search bar.',
               icon: 'i-mdi-magnify',
-              default: 'i-heroicons-magnifying-glass-20-solid'
+              default: 'i-mdi-magnify'
             }),
             dark: field({
               type: 'icon',

@@ -80,15 +80,6 @@ export default defineNuxtConfig({
     '@nuxt/image'
   ],
 
-  nitro: {
-    prerender: {
-      routes: [
-        '/'
-      ],
-      crawlLinks: true
-    }
-  },
-
   routeRules: {
     '/api/search.json': { prerender: true }
   },

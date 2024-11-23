@@ -41,15 +41,15 @@ const links = computed(() => [toc?.bottom?.edit && {
 <template>
   <UPage>
     <UPageHeader
-      :title="page?.title"
-      :description="page?.description"
-      :links="page?.links"
+      :title="page.title"
+      :description="page.description"
+      :links="page.links"
       :headline="headline"
     />
 
     <UPageBody prose>
       <ContentRenderer
-        v-if="page?.body"
+        v-if="page.body"
         :value="page"
       />
 
@@ -59,12 +59,12 @@ const links = computed(() => [toc?.bottom?.edit && {
     </UPageBody>
 
     <template
-      v-if="page?.toc !== false"
+      v-if="page.toc !== false"
       #right
     >
       <UContentToc
         :title="toc?.title"
-        :links="page?.body?.toc?.links"
+        :links="page.body?.toc?.links"
       >
         <template
           v-if="toc?.bottom"
@@ -72,10 +72,10 @@ const links = computed(() => [toc?.bottom?.edit && {
         >
           <div
             class="hidden lg:block space-y-6"
-            :class="{ '!mt-6': page?.body?.toc?.links?.length }"
+            :class="{ '!mt-6': page.body?.toc?.links?.length }"
           >
             <UDivider
-              v-if="page?.body?.toc?.links?.length"
+              v-if="page.body?.toc?.links?.length"
               type="dashed"
             />
 

@@ -1,13 +1,12 @@
 <template>
   <div>
     <Analytics />
+    <NuxtRouteAnnouncer />
     <NuxtLoadingIndicator />
 
-    <UMain>
       <NuxtLayout>
         <NuxtPage />
       </NuxtLayout>
-    </UMain>
 
     <ClientOnly>
       <LazyUContentSearch
@@ -15,8 +14,6 @@
         :navigation="navigation"
       />
     </ClientOnly>
-
-    <UNotifications />
   </div>
   
 </template>
