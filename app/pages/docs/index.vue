@@ -11,9 +11,9 @@ useSeoMeta({
 
 <template>
   <!-- <AppHeader /> -->
-   <Navbar />
-  <UMain>
-
+   <!-- <Navbar /> -->
+  
+   <UMain>
     <ULandingSection
       :title="page?.features.title"
       :links="page?.features.links"

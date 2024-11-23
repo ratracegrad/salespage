@@ -4,9 +4,14 @@
     <NuxtRouteAnnouncer />
     <NuxtLoadingIndicator />
 
+    <!-- <AppHeader /> -->
+     <Navbar />
+
+    <UMain>
       <NuxtLayout>
         <NuxtPage />
       </NuxtLayout>
+    </UMain>
 
     <ClientOnly>
       <LazyUContentSearch

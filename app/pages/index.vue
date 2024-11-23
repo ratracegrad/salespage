@@ -5,7 +5,7 @@
 <template>
   <main class="bg-darkBackground text-zinc-100">
     <!-- <Banner /> -->
-    <Navbar />
+    <!-- <Navbar /> -->
     <Hero />
     <VideoPlayer />
     <Pricing />
